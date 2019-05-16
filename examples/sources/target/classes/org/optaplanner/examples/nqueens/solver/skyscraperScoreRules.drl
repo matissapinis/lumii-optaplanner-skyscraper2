@@ -1,0 +1,52 @@
+package org.optaplanner.examples.nqueens;
+    dialect "java"
+
+import org.optaplanner.core.api.score.buildin.simple.SimpleScoreHolder;
+
+import org.optaplanner.examples.nqueens.domain.PuzzleCell;
+
+global SimpleScoreHolder scoreHolder;
+
+// ############################################################################
+// Hard constraints
+// ############################################################################
+/*
+rule "haveToBeChanged"
+salience 1
+    when
+        $d1 : BoardCell(getCellClueValue() == 0)
+    then
+        scoreHolder.addConstraintMatch(kcontext, -1);
+end
+*/
+
+rule "multipleDigitsHorizontal"
+salience 2
+    when
+        $d1 : PuzzleCell($id : id, $i : getRowIndex(), $value : getCellClueValue())
+        $d2 : PuzzleCell(id > $id, getRowIndex() == $i, getCellClueValue() == $value)
+    then
+        scoreHolder.addConstraintMatch(kcontext, -1);
+end
+
+rule "multipleDigitsVertical"
+salience 2
+    when
+        $d1 : PuzzleCell($id : id, $i : getColIndex(), $value : getCellClueValue())
+        $d2 : PuzzleCell(id > $id, getColIndex() == $i, getCellClueValue() == $value)
+    then
+        scoreHolder.addConstraintMatch(kcontext, -1);
+end
+
+rule "multipleDigitsBlock"
+salience 2
+    when
+        $d1 : PuzzleCell($id : id, $i : getSideIndex(), $value : getCellClueValue())
+        $d2 : PuzzleCell(id > $id, getSideIndex() == $i, getCellClueValue() == $value)
+    then
+        scoreHolder.addConstraintMatch(kcontext, -1);
+end
+
+// ############################################################################
+// Calculate score
+// ############################################################################
