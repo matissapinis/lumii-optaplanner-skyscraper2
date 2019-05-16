@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.10.1">
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\common\persistence\generator\StringDataGenerator.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\common\persistence\generator\StringDataGenerator.java">
 <error line="340" column="31" severity="warning" message="&apos;,&apos; is preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\conferencescheduling\persistence\ConferenceSchedulingCfpDevoxxImporter.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\conferencescheduling\persistence\ConferenceSchedulingCfpDevoxxImporter.java">
 <error line="52" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 <error line="329" column="18" severity="warning" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\Skyscraper.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\Skyscraper.java">
 <error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="15" severity="warning" message="interfaces should describe a type and hence have methods." source="com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheck"/>
 <error line="16" column="46" severity="warning" message="&apos;*&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
@@ -26,7 +26,7 @@
 <error line="29" column="68" severity="warning" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 <error line="29" column="70" severity="warning" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SkyscraperHelloWorld.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SkyscraperHelloWorld.java">
 <error line="14" column="1" severity="warning" message="Duplicate import to line 11 - java.util.Iterator." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="25" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 <error line="40" column="23" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
@@ -36,7 +36,7 @@
 <error line="96" column="63" severity="warning" message="&apos;{&apos; at column 63 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="102" column="67" severity="warning" message="&apos;{&apos; at column 67 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SkyscraperPuzzleGenerator.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SkyscraperPuzzleGenerator.java">
 <error line="25" column="38" severity="warning" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 <error line="38" column="12" severity="warning" message="&apos;for&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="38" column="60" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
@@ -45,7 +45,7 @@
 <error line="131" column="36" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="143" column="41" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\Sudoku.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\Sudoku.java">
 <error line="4" severity="warning" message="interfaces should describe a type and hence have methods." source="com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheck"/>
 <error line="5" column="46" severity="warning" message="&apos;*&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="5" column="47" severity="warning" message="&apos;*&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
@@ -63,7 +63,7 @@
 <error line="18" column="70" severity="warning" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 <error line="18" column="72" severity="warning" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SudokuBoardGenerator.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SudokuBoardGenerator.java">
 <error line="25" column="40" severity="warning" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 <error line="38" column="12" severity="warning" message="&apos;for&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="38" column="56" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
@@ -72,7 +72,7 @@
 <error line="134" column="41" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="146" column="45" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SudokuHelloWorld.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\app\SudokuHelloWorld.java">
 <error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="14" column="1" severity="warning" message="Duplicate import to line 11 - java.util.Iterator." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="24" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
@@ -83,7 +83,7 @@
 <error line="99" column="61" severity="warning" message="&apos;{&apos; at column 61 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="105" column="65" severity="warning" message="&apos;{&apos; at column 65 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\BoardCell.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\BoardCell.java">
 <error line="15" column="1" severity="warning" message="Duplicate import to line 5 - org.optaplanner.core.api.domain.entity.PlanningEntity." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="16" column="1" severity="warning" message="Duplicate import to line 6 - org.optaplanner.core.api.domain.variable.PlanningVariable." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="33" column="24" severity="warning" message="&apos;{&apos; at column 24 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -112,7 +112,7 @@
 <error line="90" column="68" severity="warning" message="&apos;*&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="90" column="69" severity="warning" message="&apos;*&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Clue.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Clue.java">
 <error line="30" column="19" severity="warning" message="&apos;{&apos; at column 19 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="36" column="24" severity="warning" message="&apos;{&apos; at column 24 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="38" column="31" severity="warning" message="&apos;{&apos; at column 31 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -131,13 +131,13 @@
 <error line="76" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="80" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Column.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Column.java">
 <error line="26" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 <error line="32" column="27" severity="warning" message="&apos;{&apos; at column 27 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="34" column="37" severity="warning" message="&apos;{&apos; at column 37 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="41" column="30" severity="warning" message="&apos;{&apos; at column 30 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\NQueens.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\NQueens.java">
 <error line="37" column="1" severity="warning" message="Duplicate import to line 20 - java.util.List." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="39" column="1" severity="warning" message="Duplicate import to line 24 - org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="40" column="1" severity="warning" message="Duplicate import to line 26 - org.optaplanner.core.api.domain.solution.PlanningSolution." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
@@ -145,7 +145,7 @@
 <error line="43" column="1" severity="warning" message="Duplicate import to line 29 - org.optaplanner.core.api.score.buildin.simple.SimpleScore." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="49" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Number.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Number.java">
 <error line="18" column="21" severity="warning" message="&apos;{&apos; at column 21 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="24" column="24" severity="warning" message="&apos;{&apos; at column 24 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="26" column="33" severity="warning" message="&apos;{&apos; at column 33 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -165,7 +165,7 @@
 <error line="63" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="65" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\PuzzleCell.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\PuzzleCell.java">
 <error line="26" column="1" severity="warning" message="Duplicate import to line 16 - org.optaplanner.core.api.domain.entity.PlanningEntity." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="27" column="1" severity="warning" message="Duplicate import to line 17 - org.optaplanner.core.api.domain.variable.PlanningVariable." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="51" column="25" severity="warning" message="&apos;{&apos; at column 25 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -192,7 +192,7 @@
 <error line="110" column="11" severity="warning" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="118" column="46" severity="warning" message="&apos;{&apos; at column 46 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Queen.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Queen.java">
 <error line="39" column="31" severity="warning" message="&apos;{&apos; at column 31 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="41" column="42" severity="warning" message="&apos;{&apos; at column 42 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="44" column="25" severity="warning" message="&apos;{&apos; at column 25 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -203,7 +203,7 @@
 <error line="61" column="45" severity="warning" message="&apos;{&apos; at column 45 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="64" column="30" severity="warning" message="&apos;{&apos; at column 30 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Region.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Region.java">
 <error line="32" column="29" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="37" column="27" severity="warning" message="&apos;{&apos; at column 27 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="39" column="37" severity="warning" message="&apos;{&apos; at column 37 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -215,11 +215,11 @@
 <error line="54" column="42" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="62" column="30" severity="warning" message="&apos;{&apos; at column 30 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Row.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Row.java">
 <error line="27" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 <error line="51" column="30" severity="warning" message="&apos;{&apos; at column 30 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Side.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\Side.java">
 <error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="42" column="27" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="47" column="27" severity="warning" message="&apos;{&apos; at column 27 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -232,7 +232,7 @@
 <error line="65" column="42" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="74" column="30" severity="warning" message="&apos;{&apos; at column 30 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\SkyscraperPuzzle.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\SkyscraperPuzzle.java">
 <error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="26" column="1" severity="warning" message="Duplicate import to line 21 - java.util.List." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="53" column="31" severity="warning" message="&apos;{&apos; at column 31 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
@@ -250,11 +250,11 @@
 <error line="75" column="44" severity="warning" message="&apos;{&apos; at column 44 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="87" column="58" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\solution\SudokuNumberStrengthWeightFactory.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\solution\SudokuNumberStrengthWeightFactory.java">
 <error line="16" column="89" severity="warning" message="&apos;&gt;&apos; is followed by an illegal character." source="com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck"/>
 <error line="16" column="89" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\SudokuBoard.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\domain\SudokuBoard.java">
 <error line="30" column="26" severity="warning" message="&apos;{&apos; at column 26 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="31" column="35" severity="warning" message="&apos;{&apos; at column 35 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="31" column="35" severity="warning" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
@@ -274,38 +274,38 @@
 <error line="67" column="67" severity="warning" message="&apos;==&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="67" column="69" severity="warning" message="&apos;==&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SkyscraperClueChangeMove.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SkyscraperClueChangeMove.java">
 <error line="45" column="81" severity="warning" message="&apos;{&apos; at column 81 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="66" column="24" severity="warning" message="&apos;{&apos; at column 24 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="66" column="39" severity="warning" message="&apos;}&apos; at column 39 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
 <error line="73" column="16" severity="warning" message="&apos;{&apos; at column 16 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SkyscraperMoveChangeFactory.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SkyscraperMoveChangeFactory.java">
 <error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="9" column="1" severity="warning" message="Duplicate import to line 6 - java.util.ArrayList." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="11" column="1" severity="warning" message="Duplicate import to line 7 - java.util.List." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="13" column="1" severity="warning" message="Duplicate import to line 3 - org.optaplanner.core.impl.heuristic.move.Move." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="14" column="1" severity="warning" message="Duplicate import to line 4 - org.optaplanner.core.impl.heuristic.selector.move.factory.MoveListFactory." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SudokuMoveChangeFactory.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SudokuMoveChangeFactory.java">
 <error line="9" column="1" severity="warning" message="Duplicate import to line 6 - java.util.ArrayList." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="11" column="1" severity="warning" message="Duplicate import to line 7 - java.util.List." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="13" column="1" severity="warning" message="Duplicate import to line 3 - org.optaplanner.core.impl.heuristic.move.Move." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="14" column="1" severity="warning" message="Duplicate import to line 4 - org.optaplanner.core.impl.heuristic.selector.move.factory.MoveListFactory." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SudokuNumberChangeMove.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\nqueens\solver\move\factory\SudokuNumberChangeMove.java">
 <error line="45" column="79" severity="warning" message="&apos;{&apos; at column 79 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="66" column="24" severity="warning" message="&apos;{&apos; at column 24 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="66" column="39" severity="warning" message="&apos;}&apos; at column 39 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
 <error line="73" column="16" severity="warning" message="&apos;{&apos; at column 16 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\rocktour\swingui\RockTourWorldPanel.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\rocktour\swingui\RockTourWorldPanel.java">
 <error line="96" column="112" severity="warning" message="&apos;/&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\main\java\org\optaplanner\examples\taskassigning\domain\Task.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\main\java\org\optaplanner\examples\taskassigning\domain\Task.java">
 <error line="161" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 </file>
-<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper\examples\sources\src\test\java\org\optaplanner\examples\meetingscheduling\solver\MeetingSchedulingScoreConstraintTest.java">
+<file name="C:\Users\PC\Desktop\lumii-optaplanner-skyscraper2\examples\sources\src\test\java\org\optaplanner\examples\meetingscheduling\solver\MeetingSchedulingScoreConstraintTest.java">
 <error line="65" column="29" severity="warning" message="&apos;+&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="65" column="30" severity="warning" message="&apos;+&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>

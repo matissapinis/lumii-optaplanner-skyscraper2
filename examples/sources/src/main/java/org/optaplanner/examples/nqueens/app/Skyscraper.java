@@ -5,31 +5,34 @@ Sources:
 1) lumii-optaplanner-sudoku
 
 Author:         Matīss Apinis
-Date created:   2019/05/13
-Date edited:    2019/05/13
+Date created:   2019/05/16
+Date edited:    2019/05/16
 *******************************************************************************************************************/
 
 package org.optaplanner.examples.nqueens.app;
 
-/** TODO: This is where the sudoku reasoning starts to diverge for the skyscraper puzzle. **/
 public interface Skyscraper {
-    public static final int numberOfCells = 9*9; // 4*4 #
-    public static final int maxNumberOfRows = 9; // 4 #
-    public static final int maxNumberOfColumns = 9; // 4 #
-    public static final int minCellClueValue = 1; // 1 #
-    public static final int maxCellClueValue = 9; // 4 #
-    public static final int numOfSides = 9; // 4 #
-    public static final int numOfCellsInSide = 3*3; // 4*1 ?
-    public static final int numberOfRowsInSide = 3; // 4 ?
-    public static final int numberOfColsInSide = 3; // 4 ?
-    public enum GameMode { EASY, MEDIUM, HARD }; // enum GameMode = { EASY, MEDIUM, HARD };
-    public static final int countOfCluesInPuzzle = 9*9; // 4*4 #
-    public static final int highestClueValue = 9; // 4 #
-    public static final int lowestClueValue = 1; // 1 #
-    public static final int clueValues[] = new int[]{1,2,3,4,5,6,7,8,9}; // int clueValues[] = new int[]{1,2,3,4};
+    /** Defines the parameters of the board grid. **/
+    public static final int numberOfRows = 4;
+    public static final int numberOfCols = 4;
+    public static final int numberOfCells = 4*4;
+
+    /** Defines the parameters of the board grid entries. **/
+    public static final int minCellValue = 1;
+    public static final int maxCellValue = 4;
+    public static final int cellValues[] = new int[]{1,2,3,4};
+
+    /** Defines the parameters of the board grid border. **/
+    public static final int numOfSides = 4;
+    public static final int numOfClues = 4*4;
+
+    /** Defines the parameters of the board grid border entries. **/
+    public static final int minClueValue = 1;
+    public static final int maxClueValue = 4;
+    public static final int clueValues[] = new int[]{1,2,3,4};
 }
 
-/**
+/** From lumii-optaplanner-sudoku:
 package org.optaplanner.examples.nqueens.app;
 
 public interface Sudoku {
