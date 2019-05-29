@@ -9,12 +9,7 @@ import org.slf4j.LoggerFactory;
 **/
 
 import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Iterator;
-import java.util.List;
 
-import org.optaplanner.examples.nqueens.domain.BoardCell;
 import org.optaplanner.examples.nqueens.domain.Region;
 import org.optaplanner.examples.nqueens.domain.SudokuBoard;
 

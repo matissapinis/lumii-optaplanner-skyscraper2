@@ -9,15 +9,8 @@ import org.slf4j.LoggerFactory;
 **/
 
 import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Iterator;
-import java.util.List;
 
 import org.optaplanner.examples.nqueens.domain.PuzzleCell;
-import org.optaplanner.examples.nqueens.domain.Clue;
-import org.optaplanner.examples.nqueens.domain.Side;
-import org.optaplanner.examples.nqueens.domain.SkyscraperPuzzle;
 
 public class SkyscraperHelloWorld {
     SkyscraperPuzzle unSolvedPuzzle = null;

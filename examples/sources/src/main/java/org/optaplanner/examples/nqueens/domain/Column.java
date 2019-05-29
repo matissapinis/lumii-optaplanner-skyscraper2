@@ -21,22 +21,54 @@ import org.optaplanner.examples.common.domain.AbstractPersistable;
 
 // @XStreamAlias("Column")
 public class Column extends AbstractPersistable {
-    private int index;
+    private int idx;
+    private int T_clue; // Top clue.
+    private int B_clue; // Bottom clue.
 
-    /** Added from sudoku example: **/
+    /** Initialize column: **/
     public Column() {
-        super();
-        this.index = 0;
+        super();        // Calls immediate parent constructor for superclass AbstractPersistable.
+        this.idx = 0;
+        this.T_clue = 0;
+        this.B_clue = 0;
     }
 
-    public int getIndex() { return index; }
+    /** Set and get column index: **/
+    public void set_idx(int idx) {
+        this.idx = idx;
+    }
 
-    public void setIndex(int index) { this.index = index; }
+    public int get_idx() {
+        return this.idx;
+    }
+
+    /** Set and get column top clue: **/
+    public void set_T_clue(int T_clue) {
+        this.T_clue = T_clue;
+    }
+
+    public int get_T_clue() {
+        return this.T_clue;
+    }
+
+    /** Set and get column bottom clue: **/
+    public void set_B_clue(int B_clue) {
+        this.B_clue = B_clue;
+    }
+
+    public int get_B_clue() {
+        return this.B_clue;
+    }
+
+    /** Return a string with the column index for System.out.println(·): **/
+    public String print_idx() {
+        // "Column[idx]":
+        return "Column[" + this.idx + "]";
+    }
 
     /**
-    @Override
-    public String toString() { return "Column [index=" + index + "]"; }
+    /// This override is already done in the class Column, so this is an analogous method without any overriding.
+    @Override // Overrides method from superclass AbstractPersistable, which is obligatory.
+    public String getLabel() {
     **/
-    @Override
-    public String toString() { return "Column-" + index; }
 }

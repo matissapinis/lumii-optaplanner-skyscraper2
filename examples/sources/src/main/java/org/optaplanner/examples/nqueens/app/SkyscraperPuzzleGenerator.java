@@ -2,18 +2,13 @@ package org.optaplanner.examples.nqueens.app;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
-import org.optaplanner.examples.nqueens.domain.PuzzleCell;
-import org.optaplanner.examples.nqueens.domain.Clue;
-import org.optaplanner.examples.nqueens.domain.Side;
-import org.optaplanner.examples.nqueens.domain.SkyscraperPuzzle;
+import org.optaplanner.examples.nqueens.domain.Cell;
 
 public class SkyscraperPuzzleGenerator {
     SkyscraperPuzzle puzzle = null;
-    List<PuzzleCell> cells;
+    List<Cell> cells;
     List<Side> sides;
     List<Clue> clues;
 

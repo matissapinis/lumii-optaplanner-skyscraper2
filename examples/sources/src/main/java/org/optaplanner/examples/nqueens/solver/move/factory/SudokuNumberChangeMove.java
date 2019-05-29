@@ -7,10 +7,8 @@ import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.core.impl.heuristic.move.AbstractMove;
-import org.optaplanner.core.impl.heuristic.move.Move;
 import org.optaplanner.core.impl.score.director.ScoreDirector;
 
-import org.optaplanner.examples.nqueens.domain.BoardCell;
 import org.optaplanner.examples.nqueens.domain.Number;
 import org.optaplanner.examples.nqueens.domain.SudokuBoard;
 

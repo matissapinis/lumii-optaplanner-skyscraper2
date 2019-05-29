@@ -6,30 +6,30 @@ Sources:
 
 Author:         Matīss Apinis
 Date created:   2019/05/16
-Date edited:    2019/05/16
+Date edited:    2019/05/29
 *******************************************************************************************************************/
 
 package org.optaplanner.examples.nqueens.app;
 
 public interface Skyscraper {
     /** Defines the parameters of the board grid. **/
-    public static final int numberOfRows = 4;
-    public static final int numberOfCols = 4;
-    public static final int numberOfCells = 4*4;
+    public static final int row_count = 4;
+    public static final int column_count = 4;
+    public static final int cell_count = 4*4;
 
     /** Defines the parameters of the board grid entries. **/
-    public static final int minCellValue = 1;
-    public static final int maxCellValue = 4;
-    public static final int cellValues[] = new int[]{1,2,3,4};
+    public static final int minimum_cell_value = 1;
+    public static final int maximum_cell_value = 4;
+    public static final int cell_values[] = new int[]{1,2,3,4};
 
     /** Defines the parameters of the board grid border. **/
-    public static final int numOfSides = 4;
-    public static final int numOfClues = 4*4;
+    public static final int side_count = 4;
+    public static final int clue_count = 4*4;
 
     /** Defines the parameters of the board grid border entries. **/
-    public static final int minClueValue = 1;
-    public static final int maxClueValue = 4;
-    public static final int clueValues[] = new int[]{1,2,3,4};
+    public static final int minimum_clue_value = 1;
+    public static final int maximum_clue_value = 4;
+    public static final int clue_values[] = new int[]{1,2,3,4};
 }
 
 /** From lumii-optaplanner-sudoku:

@@ -7,13 +7,9 @@ import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.core.impl.heuristic.move.AbstractMove;
-import org.optaplanner.core.impl.heuristic.move.Move;
 import org.optaplanner.core.impl.score.director.ScoreDirector;
 
-import org.optaplanner.examples.nqueens.app.Skyscraper;
 import org.optaplanner.examples.nqueens.domain.PuzzleCell;
-import org.optaplanner.examples.nqueens.domain.Clue;
-import org.optaplanner.examples.nqueens.domain.SkyscraperPuzzle;
 
 /**
 [This class] is not abstract and does not override abstract method in [OptaPlanner cores files for heuristics].

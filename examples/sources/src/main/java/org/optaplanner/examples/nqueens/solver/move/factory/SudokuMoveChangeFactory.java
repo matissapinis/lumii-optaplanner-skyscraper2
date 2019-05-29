@@ -1,19 +1,10 @@
 package org.optaplanner.examples.nqueens.solver.move.factory;
 
-import org.optaplanner.core.impl.heuristic.move.Move;
 import org.optaplanner.core.impl.heuristic.selector.move.factory.MoveListFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.optaplanner.core.impl.heuristic.move.Move;
-import org.optaplanner.core.impl.heuristic.selector.move.factory.MoveListFactory;
-
-import org.optaplanner.examples.nqueens.domain.BoardCell;
 import org.optaplanner.examples.nqueens.domain.SudokuBoard;
 import org.optaplanner.examples.nqueens.domain.Number;
 

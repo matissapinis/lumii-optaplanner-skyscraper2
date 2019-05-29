@@ -6,8 +6,6 @@ import java.util.Comparator;
 
 import org.apache.commons.lang3.builder.CompareToBuilder;
 
-import org.optaplanner.examples.nqueens.domain.BoardCell;
-
 public class SudokuDifficultyComparator implements Comparator<BoardCell>, Serializable {
     @Override
     public int compare(BoardCell a, BoardCell b) {

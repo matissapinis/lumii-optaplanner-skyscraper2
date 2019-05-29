@@ -6,8 +6,8 @@ Sources:
 2) https://docs.optaplanner.org/7.20.0.Final/optaplanner-docs/html_single/index.html#cloudBalancingClassCloudBalance
 
 Author:         Matīss Apinis
-Date created:   2019/04/23
-Date edited:    2019/05/13
+Date created:   2019/05/28
+Date edited:    2019/05/28
 
 Notes:
 * The CloudBalance class has a @PlanningSolution annotation.
@@ -33,33 +33,48 @@ import org.optaplanner.core.api.score.buildin.simple.SimpleScore;
 
 /** TODO: Fix this dependency! **/
 import org.optaplanner.examples.nqueens.app.Skyscraper;
-
 // Planning solution:
 @PlanningSolution
-public class SkyscraperPuzzle implements Solution<SimpleScore> {
-    int id;
-    static int count;
+public class Puzzle implements Solution<SimpleScore> {
+    int idx;
 
+    /** TODO: Create my own planning entity! **/
     // Planning entity:
-    /** TODO: Fix this dependency! **/
-    private List<PuzzleCell> cells;
-    private List<Side> sides;
+    private List<Row> rows;
+    private List<Column> columns;
+    private List<Cell> cells;
+
+    /** TODO: How do I work with this? **/
     // Problem facts:
-    /** TODO: Fix this dependency! **/
-    private List<Clue> clues;
+    // private List<Clue> clues;
 
     private SimpleScore score;
 
-    public SkyscraperPuzzle() { this(++count); }
-    private SkyscraperPuzzle(int count){ this.id = count; }
-    public int getId(){ return id; }
+    /** Initialize puzzle board: **/
+    private SkyscraperPuzzle(int idx) {
+        this.idx = idx;
+    }
+
+    /** Set and get column index: **/
+    /** TODO: What's the point of this method, if changing the index after the constructor has no use? **/
+    public void set_idx(int idx) {
+        this.idx = idx
+    }
+
+    public int get_idx() {
+        return this.idx;
+    }
 
     @PlanningEntityCollectionProperty
     /** TODO: Fix this dependency! **/
-    public List<PuzzleCell> getCells() { return cells; }
+    /** Set and get puzzle board cells: **/
+    public void set_cells(List<Cell> cells) {
+        this.cells = cells;
+    }
 
-    /** TODO: Fix this dependency! **/
-    public void setCells(List<PuzzleCell> cells) { this.cells = cells; }
+    public List<Cell> get_cells() {
+        return cells;
+    }
 
     @ValueRangeProvider(id = "numberRange")
     /** TODO: Fix this dependency! **/
@@ -88,7 +103,7 @@ public class SkyscraperPuzzle implements Solution<SimpleScore> {
         PuzzleCell cellToReturn = null;
         /** TODO: Fix this dependency! **/
         if ((rowIndex < 1 || rowIndex > Skyscraper.maxNumberOfRows) ||
-            (colIndex < 1 || colIndex > Skyscraper.maxNumberOfColumns)) {
+                (colIndex < 1 || colIndex > Skyscraper.maxNumberOfColumns)) {
             throw new IllegalArgumentException("Row index or Col index is out of bound!");
         }
 

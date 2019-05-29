@@ -15,9 +15,8 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.optaplanner.core.impl.heuristic.selector.common.decorator.SelectionSorterWeightFactory;
 
 /** TODO: Fix this dependency! **/
-import org.optaplanner.examples.nqueens.domain.Clue;
+
 /** TODO: Fix this dependency! **/
-import org.optaplanner.examples.nqueens.domain.SkyscraperPuzzle;
 
 public class SkyscraperClueStrengthWeightFactory implements SelectionSorterWeightFactory<SkyscraperPuzzle, Clue> {
     @Override

@@ -1,22 +1,11 @@
 package org.optaplanner.examples.nqueens.solver.move.factory;
 
-import org.optaplanner.core.impl.heuristic.move.Move;
 import org.optaplanner.core.impl.heuristic.selector.move.factory.MoveListFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.optaplanner.core.impl.heuristic.move.Move;
-import org.optaplanner.core.impl.heuristic.selector.move.factory.MoveListFactory;
-
-import org.optaplanner.examples.nqueens.app.Skyscraper;
 import org.optaplanner.examples.nqueens.domain.PuzzleCell;
-import org.optaplanner.examples.nqueens.domain.SkyscraperPuzzle;
-import org.optaplanner.examples.nqueens.domain.Clue;
 
 /**
 Previously (prior to reboot when Maven compilation worked):

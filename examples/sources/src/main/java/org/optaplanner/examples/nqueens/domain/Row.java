@@ -22,31 +22,49 @@ import org.optaplanner.examples.common.swingui.components.Labeled;
 
 // @XStreamAlias("Row")
 public class Row extends AbstractPersistable implements Labeled {
-    private int index;
+    private int idx;
+    private int L_clue; // Left clue.
+    private int R_clue; // Right clue.
 
-    /** Added from sudoku example: **/
+    /** Initialize row: **/
     public Row() {
-        super();
-        this.index = 0;
+        super();        // Calls immediate parent constructor for superclass AbstractPersistable.
+        this.idx = 0;
+        this.L_clue = 0;
+        this.R_clue = 0;
     }
 
-    public int getIndex() {
-        return index;
+    /** Set and get row index: **/
+    public void set_idx(int idx) {
+        this.idx = idx;
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    public int get_idx() {
+        return this.idx;
     }
 
-    @Override
+    /** Set and get row left clue: **/
+    public void set_L_clue(int L_clue) {
+        this.L_clue = L_clue;
+    }
+
+    public int get_L_clue() {
+        return this.L_clue;
+    }
+
+    /** Set and get row right clue: **/
+    public void set_R_clue(int R_clue) {
+        this.R_clue = R_clue;
+    }
+
+    public int get_R_clue() {
+        return this.R_clue;
+    }
+
+    /** Return a string with the row index for System.out.println(·): **/
+    @Override // Obligatory override for method from implemented class Labeled in superclass AbstractPersistable.
     public String getLabel() {
-        return "Row " + index;
+        // "Row[idx]":
+        return ("Row[" + this.idx + "]");
     }
-
-    /**
-    @Override
-    public String toString() { return "Row [index=" + index + "]";
-    **/
-    @Override
-    public String toString() { return "Row-" + index; }
 }
