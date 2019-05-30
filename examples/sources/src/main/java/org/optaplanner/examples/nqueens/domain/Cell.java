@@ -32,44 +32,33 @@ import org.optaplanner.examples.nqueens.domain.solution.SkyscraperClueStrengthWe
 // Planning entity:
 @PlanningEntity(difficultyComparatorClass = SkyscraperDifficultyComparator.class)
 public class Cell implements Serializable {
-    private int idx;
-    private Row row;
-    private Column column;
+    private int r_idx;
+    private int c_idx;
     private int entry;
 
     /** Initialize cell: **/
-    private Cell(int idx){
-        this.idx = idx;
-        this.row = new Row();
-        this.column = new Column();
-        this.entry = 0;
-    }
-
-    /** Set and get cell index: **/
-    public void set_idx(int idx) {
-        this.idx = idx;
-    }
-
-    public int get_idx() {
-        return this.idx;
+    private Cell(int r_idx, int c_idx){
+        this.r_idx = r_idx;
+        this.c_idx = c_idx;
+        this.entry = -1;
     }
 
     /** Set and get cell row index: **/
-    public void set_row_idx(int idx) {
-        this.row.set_idx(idx);
+    public void set_row_idx(int r_idx) {
+        this.r_idx = r_idx;
     }
 
-    private int get_row_idx() {
-        return this.row.get_idx();
+    public int get_row_idx() {
+        return this.r_idx;
     }
 
     /** Set and get cell column index: **/
-    public void set_column_idx(int idx) {
-        this.column.set_idx(idx);
+    public void set_column_idx(int c_idx) {
+        this.c_idx = c_idx;
     }
 
-    private int get_column_idx() {
-        return this.column.get_idx();
+    public int get_column_idx() {
+        return this.c_idx;
     }
 
     /** Set and get cell entry value: **/

@@ -28,9 +28,9 @@ public class Column extends AbstractPersistable {
     /** Initialize column: **/
     public Column() {
         super();        // Calls immediate parent constructor for superclass AbstractPersistable.
-        this.idx = 0;
-        this.T_clue = 0;
-        this.B_clue = 0;
+        this.idx = -1;
+        this.T_clue = -1;
+        this.B_clue = -1;
     }
 
     /** Set and get column index: **/

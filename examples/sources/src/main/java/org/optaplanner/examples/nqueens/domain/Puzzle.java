@@ -31,45 +31,55 @@ import org.optaplanner.core.api.domain.solution.Solution;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.simple.SimpleScore;
 
-/** TODO: Fix this dependency! **/
 import org.optaplanner.examples.nqueens.app.Skyscraper;
+
 // Planning solution:
 @PlanningSolution
 public class Puzzle implements Solution<SimpleScore> {
-    int idx;
-
     /** TODO: Create my own planning entity! **/
     // Planning entity:
     private List<Row> rows;
     private List<Column> columns;
     private List<Cell> cells;
 
-    /** TODO: How do I work with this? **/
-    // Problem facts:
-    // private List<Clue> clues;
-
     private SimpleScore score;
 
     /** Initialize puzzle board: **/
-    private SkyscraperPuzzle(int idx) {
-        this.idx = idx;
+    private Puzzle() {
+        this.rows = new ArrayList<Row>();
+        this.columns = new ArrayList<Column>();
+        this.cells = new ArrayList<Cell>();
     }
 
-    /** Set and get column index: **/
-    /** TODO: What's the point of this method, if changing the index after the constructor has no use? **/
-    public void set_idx(int idx) {
-        this.idx = idx
-    }
+    /** Create puzzle rows, columns and cells assigned to them: **/
+    private void create_puzzle() {
+        // Create 4 rows indexed from 0 to 3:
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+            new_row = new Row();
+            new_row.set_idx(i);
+            this.rows.add(new_row);
+        }
 
-    public int get_idx() {
-        return this.idx;
+        // Create 4 columns indexed from 0 to 3:
+        for (int i = 0; i < Skyscraper.column_count; i++) {
+            new_column = new Column();
+            new_column.set_idx(i);
+            this.columns.add(new_column);
+        }
+
+        // Create 16 cells indexed from (0,0) to (3,3):
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+            for (int j = 0; j < Skyscraper.column_count; j++) {
+                new_cell = new Cell(i, j);
+                this.cells.add(new_cell);
+            }
+        }
     }
 
     @PlanningEntityCollectionProperty
-    /** TODO: Fix this dependency! **/
-    /** Set and get puzzle board cells: **/
-    public void set_cells(List<Cell> cells) {
-        this.cells = cells;
+    /** Set and get puzzle board cell entry: **/
+    public void set_cell_entry(int r_idx, int c_idx) {
+
     }
 
     public List<Cell> get_cells() {
@@ -77,7 +87,7 @@ public class Puzzle implements Solution<SimpleScore> {
     }
 
     @ValueRangeProvider(id = "numberRange")
-    /** TODO: Fix this dependency! **/
+    /** TODO: Fix these dependencies! **/
     public List<Clue> getClues() { return clues; }
     /** TODO: Fix this dependency! **/
     public void setClues(List<Clue> clues) { this.clues = clues; }

@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.optaplanner.examples.nqueens.domain.SudokuBoard;
-import org.optaplanner.examples.nqueens.domain.Number;
 
 /**
 Previously (prior to reboot when Maven compilation worked):

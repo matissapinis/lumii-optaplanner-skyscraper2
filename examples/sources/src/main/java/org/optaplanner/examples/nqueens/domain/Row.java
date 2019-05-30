@@ -29,9 +29,9 @@ public class Row extends AbstractPersistable implements Labeled {
     /** Initialize row: **/
     public Row() {
         super();        // Calls immediate parent constructor for superclass AbstractPersistable.
-        this.idx = 0;
-        this.L_clue = 0;
-        this.R_clue = 0;
+        this.idx = -1;
+        this.L_clue = -1;
+        this.R_clue = -1;
     }
 
     /** Set and get row index: **/

@@ -9,7 +9,6 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.core.impl.heuristic.move.AbstractMove;
 import org.optaplanner.core.impl.score.director.ScoreDirector;
 
-import org.optaplanner.examples.nqueens.domain.Number;
 import org.optaplanner.examples.nqueens.domain.SudokuBoard;
 
 /**

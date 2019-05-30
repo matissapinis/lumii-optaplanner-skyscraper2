@@ -18,9 +18,9 @@ public interface Skyscraper {
     public static final int cell_count = 4*4;
 
     /** Defines the parameters of the board grid entries. **/
-    public static final int minimum_cell_value = 1;
-    public static final int maximum_cell_value = 4;
-    public static final int cell_values[] = new int[]{1,2,3,4};
+    public static final int minimum_entry_value = 1;
+    public static final int maximum_entry_value = 4;
+    public static final int entry_values[] = new int[]{1,2,3,4};
 
     /** Defines the parameters of the board grid border. **/
     public static final int side_count = 4;

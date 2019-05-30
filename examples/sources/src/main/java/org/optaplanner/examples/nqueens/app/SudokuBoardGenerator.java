@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.optaplanner.examples.nqueens.domain.Number;
 import org.optaplanner.examples.nqueens.domain.Region;
 import org.optaplanner.examples.nqueens.domain.SudokuBoard;
 
