@@ -9,12 +9,28 @@ import org.optaplanner.examples.nqueens.app.Skyscraper;
 public class Entry implements Serializable {
     private int id;
     private int value;
+<<<<<<< HEAD
+    private static int count; ///
+=======
+>>>>>>> skyscraper3
     // Planning variable:
     @PlanningVariable
     private Cell cell;
 
+<<<<<<< HEAD
+    /** TODO: Not sure how to use an entry counter as ID ennumerator:
+    public Entry() {
+        this(++count);
+    }
+    **/
+
+    /** Initialize entry: **/
+    public Entry() {
+        /// this.id = count;
+=======
     private Entry(int id) {
         this.id = id;
+>>>>>>> skyscraper3
         this.value = -1;
     }
 
@@ -24,10 +40,13 @@ public class Entry implements Serializable {
     }
 
     /** Set and get entry value: **/
+<<<<<<< HEAD
+=======
     public int get_entry_value() {
         return this.value;
     }
 
+>>>>>>> skyscraper3
     public void set_entry_value(int value) {
         if (value < Skyscraper.minimum_entry_value || value > Skyscraper.maximum_entry_value) {
             throw new IllegalArgumentException("Entry values should be from 1 to 4!");
@@ -36,6 +55,13 @@ public class Entry implements Serializable {
         this.value = value;
     }
 
+<<<<<<< HEAD
+    public int get_entry_value() {
+        return this.value;
+    }
+
+=======
+>>>>>>> skyscraper3
     @Override
     public String toString() {
         // "Number[id, value]":

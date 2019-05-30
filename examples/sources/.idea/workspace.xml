@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ed1b41f-51e1-4fc4-91f4-273bcae93909" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Puzzle.java" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/Skyscraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/Skyscraper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SudokuBoardGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SudokuBoardGenerator.java" afterDir="false" />
@@ -13,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/solution/SudokuNumberStrengthWeightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/solution/SudokuNumberStrengthWeightFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/solver/move/factory/SudokuMoveChangeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/solver/move/factory/SudokuMoveChangeFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/solver/move/factory/SudokuNumberChangeMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/solver/move/factory/SudokuNumberChangeMove.java" afterDir="false" />
+>>>>>>> skyscraper3
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,8 +96,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="478">
+              <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+=======
             <state relative-caret-position="682">
               <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+>>>>>>> skyscraper3
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -103,8 +114,12 @@
                 <element signature="e#2425#2426#0" expanded="true" />
                 <element signature="e#2461#2462#0" expanded="true" />
                 <element signature="e#2505#2506#0" expanded="true" />
+<<<<<<< HEAD
+                <element signature="e#2444#2445#0" expanded="true" />
+=======
                 <element signature="e#2587#2588#0" expanded="true" />
                 <element signature="e#2621#2622#0" expanded="true" />
+>>>>>>> skyscraper3
                 <element signature="e#2651#2652#0" expanded="true" />
                 <element signature="e#2684#2685#0" expanded="true" />
               </folding>
@@ -113,12 +128,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SkyscraperPuzzleGenerator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="85">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+=======
             <state relative-caret-position="289">
               <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+>>>>>>> skyscraper3
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1190#1191#0" expanded="true" />
+                <element signature="e#1235#1236#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,17 +155,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Puzzle.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="597">
+              <caret line="111" column="12" lean-forward="true" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4218#4219#0" expanded="true" />
+=======
             <state relative-caret-position="663">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#3079#3080#0" expanded="true" />
+>>>>>>> skyscraper3
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SkyscraperPuzzleGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -153,6 +199,7 @@
                 <element signature="e#1190#1191#0" expanded="true" />
                 <element signature="e#1235#1236#0" expanded="true" />
                 <element signature="e#1267#1268#0" expanded="true" />
+>>>>>>> skyscraper3
               </folding>
             </state>
           </provider>
@@ -210,6 +257,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/SkyscraperPuzzle.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Row.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Column.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/Skyscraper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java" />
+=======
+>>>>>>> skyscraper3
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Cell.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Puzzle.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/Skyscraper.java" />
@@ -554,16 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SkyscraperPuzzleGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/solution/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -599,22 +642,48 @@
           <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Puzzle.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SkyscraperPuzzleGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="289">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#3079#3080#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/solution/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="73" column="1" lean-forward="true" selection-start-line="16" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2181#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+>>>>>>> skyscraper3
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/NQueens.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -628,17 +697,99 @@
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/Skyscraper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Puzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3079#3080#0" expanded="true" />
+>>>>>>> skyscraper3
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/app/SkyscraperPuzzleGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/NQueens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+>>>>>>> skyscraper3
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="478">
+          <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+=======
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+>>>>>>> skyscraper3
+          <folding>
+            <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#2145#2146#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
+            <element signature="e#2425#2426#0" expanded="true" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2651#2652#0" expanded="true" />
+            <element signature="e#2684#2685#0" expanded="true" />
+=======
+>>>>>>> skyscraper3
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+>>>>>>> skyscraper3
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+=======
             <element signature="e#2145#2146#0" expanded="true" />
             <element signature="e#2174#2175#0" expanded="true" />
             <element signature="e#2214#2215#0" expanded="true" />
@@ -651,6 +802,7 @@
             <element signature="e#2621#2622#0" expanded="true" />
             <element signature="e#2651#2652#0" expanded="true" />
             <element signature="e#2684#2685#0" expanded="true" />
+>>>>>>> skyscraper3
           </folding>
         </state>
       </provider>
@@ -658,9 +810,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/nqueens/domain/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
+<<<<<<< HEAD
+          <caret line="111" column="12" lean-forward="true" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+=======
           <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+>>>>>>> skyscraper3
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#4218#4219#0" expanded="true" />
+=======
             <element signature="e#558#559#0" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
@@ -669,6 +828,7 @@
             <element signature="e#1190#1191#0" expanded="true" />
             <element signature="e#1235#1236#0" expanded="true" />
             <element signature="e#1267#1268#0" expanded="true" />
+>>>>>>> skyscraper3
           </folding>
         </state>
       </provider>

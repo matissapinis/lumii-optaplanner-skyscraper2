@@ -34,6 +34,16 @@ import org.optaplanner.examples.nqueens.domain.solution.SkyscraperClueStrengthWe
 public class Cell implements Serializable {
     private int r_idx;
     private int c_idx;
+<<<<<<< HEAD
+    // private int entry;
+    private Entry entry;
+
+    /** Initialize cell: **/
+    public Cell(int r_idx, int c_idx){
+        this.r_idx = r_idx;
+        this.c_idx = c_idx;
+        this.entry = new Entry();
+=======
     private int entry;
 
     /** Initialize cell: **/
@@ -41,6 +51,7 @@ public class Cell implements Serializable {
         this.r_idx = r_idx;
         this.c_idx = c_idx;
         this.entry = -1;
+>>>>>>> skyscraper3
     }
 
     /** Set and get cell row index: **/
@@ -63,11 +74,11 @@ public class Cell implements Serializable {
 
     /** Set and get cell entry value: **/
     public void set_entry(int entry) {
-        this.entry = entry;
+        this.entry.set_entry_value(entry);
     }
 
     public int get_entry() {
-        return this.entry;
+        return this.entry.get_entry_value();
     }
 
     /** TODO: How do I work with this? **/
