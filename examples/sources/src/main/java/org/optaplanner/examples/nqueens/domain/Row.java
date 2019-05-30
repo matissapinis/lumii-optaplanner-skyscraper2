@@ -26,6 +26,8 @@ public class Row extends AbstractPersistable implements Labeled {
     private int L_clue; // Left clue.
     private int R_clue; // Right clue.
 
+
+
     /** Initialize row: **/
     public Row() {
         super();        // Calls immediate parent constructor for superclass AbstractPersistable.
@@ -33,6 +35,8 @@ public class Row extends AbstractPersistable implements Labeled {
         this.L_clue = -1;
         this.R_clue = -1;
     }
+
+
 
     /** Set and get row index: **/
     public void set_idx(int idx) {
@@ -43,6 +47,8 @@ public class Row extends AbstractPersistable implements Labeled {
         return this.idx;
     }
 
+
+
     /** Set and get row left clue: **/
     public void set_L_clue(int L_clue) {
         this.L_clue = L_clue;
@@ -51,6 +57,8 @@ public class Row extends AbstractPersistable implements Labeled {
     public int get_L_clue() {
         return this.L_clue;
     }
+
+
 
     /** Set and get row right clue: **/
     public void set_R_clue(int R_clue) {
@@ -61,7 +69,9 @@ public class Row extends AbstractPersistable implements Labeled {
         return this.R_clue;
     }
 
-    /** Return a string with the row index for System.out.println(·): **/
+
+
+    /** Return a string with the row index for debugging: **/
     @Override // Obligatory override for method from implemented class Labeled in superclass AbstractPersistable.
     public String getLabel() {
         // "Row[idx]":

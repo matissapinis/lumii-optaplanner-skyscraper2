@@ -55,7 +55,6 @@ public class Puzzle implements Solution<SimpleScore> {
     private void create_puzzle() {
         // Create 4 rows indexed from 0 to 3:
         for (int i = 0; i < Skyscraper.row_count; i++) {
-<<<<<<< HEAD
             Row new_row = new Row();
             new_row.set_idx(i);
             this.rows.add(new_row);
@@ -72,24 +71,6 @@ public class Puzzle implements Solution<SimpleScore> {
         for (int i = 0; i < Skyscraper.row_count; i++) {
             for (int j = 0; j < Skyscraper.column_count; j++) {
                 Cell new_cell = new Cell(i, j);
-=======
-            new_row = new Row();
-            new_row.set_idx(i);
-            this.rows.add(new_row);
-        }
-
-        // Create 4 columns indexed from 0 to 3:
-        for (int i = 0; i < Skyscraper.column_count; i++) {
-            new_column = new Column();
-            new_column.set_idx(i);
-            this.columns.add(new_column);
-        }
-
-        // Create 16 cells indexed from (0,0) to (3,3):
-        for (int i = 0; i < Skyscraper.row_count; i++) {
-            for (int j = 0; j < Skyscraper.column_count; j++) {
-                new_cell = new Cell(i, j);
->>>>>>> skyscraper3
                 this.cells.add(new_cell);
             }
         }
@@ -97,7 +78,6 @@ public class Puzzle implements Solution<SimpleScore> {
 
     @PlanningEntityCollectionProperty
     /** Set and get puzzle board cell entry: **/
-<<<<<<< HEAD
     public void set_cell_entry(int r_idx, int c_idx, int entry) {
         /** TODO: Charge to an OOP model with O(1) cell look-up instead of O(n). **/
         for (int i = 0; i < Skyscraper.row_count; i++) {
@@ -127,10 +107,6 @@ public class Puzzle implements Solution<SimpleScore> {
                 }
             }
         }
-=======
-    public void set_cell_entry(int r_idx, int c_idx) {
-
->>>>>>> skyscraper3
     }
 
     /// TBC:

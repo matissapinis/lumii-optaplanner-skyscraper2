@@ -25,6 +25,8 @@ public class Column extends AbstractPersistable {
     private int T_clue; // Top clue.
     private int B_clue; // Bottom clue.
 
+
+
     /** Initialize column: **/
     public Column() {
         super();        // Calls immediate parent constructor for superclass AbstractPersistable.
@@ -32,6 +34,8 @@ public class Column extends AbstractPersistable {
         this.T_clue = -1;
         this.B_clue = -1;
     }
+
+
 
     /** Set and get column index: **/
     public void set_idx(int idx) {
@@ -42,6 +46,8 @@ public class Column extends AbstractPersistable {
         return this.idx;
     }
 
+
+
     /** Set and get column top clue: **/
     public void set_T_clue(int T_clue) {
         this.T_clue = T_clue;
@@ -50,6 +56,8 @@ public class Column extends AbstractPersistable {
     public int get_T_clue() {
         return this.T_clue;
     }
+
+
 
     /** Set and get column bottom clue: **/
     public void set_B_clue(int B_clue) {
@@ -60,11 +68,15 @@ public class Column extends AbstractPersistable {
         return this.B_clue;
     }
 
-    /** Return a string with the column index for System.out.println(·): **/
+
+
+    /** Return a string with the row index for debugging: **/
     public String print_idx() {
         // "Column[idx]":
         return "Column[" + this.idx + "]";
     }
+
+
 
     /**
     /// This override is already done in the class Column, so this is an analogous method without any overriding.

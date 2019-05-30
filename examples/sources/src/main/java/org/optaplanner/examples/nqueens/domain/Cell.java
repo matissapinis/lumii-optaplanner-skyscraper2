@@ -34,25 +34,19 @@ import org.optaplanner.examples.nqueens.domain.solution.SkyscraperClueStrengthWe
 public class Cell implements Serializable {
     private int r_idx;
     private int c_idx;
-<<<<<<< HEAD
     // private int entry;
     private Entry entry;
 
+
+
     /** Initialize cell: **/
-    public Cell(int r_idx, int c_idx){
+    public Cell(int r_idx, int c_idx) {
         this.r_idx = r_idx;
         this.c_idx = c_idx;
         this.entry = new Entry();
-=======
-    private int entry;
-
-    /** Initialize cell: **/
-    private Cell(int r_idx, int c_idx){
-        this.r_idx = r_idx;
-        this.c_idx = c_idx;
-        this.entry = -1;
->>>>>>> skyscraper3
     }
+
+
 
     /** Set and get cell row index: **/
     public void set_row_idx(int r_idx) {
@@ -63,6 +57,8 @@ public class Cell implements Serializable {
         return this.r_idx;
     }
 
+
+
     /** Set and get cell column index: **/
     public void set_column_idx(int c_idx) {
         this.c_idx = c_idx;
@@ -71,6 +67,8 @@ public class Cell implements Serializable {
     public int get_column_idx() {
         return this.c_idx;
     }
+
+
 
     /** Set and get cell entry value: **/
     public void set_entry(int entry) {
@@ -81,10 +79,14 @@ public class Cell implements Serializable {
         return this.entry.get_entry_value();
     }
 
+
+
     /** TODO: How do I work with this? **/
     @PlanningVariable(valueRangeProviderRefs = {"numberRange"},strengthWeightFactoryClass = SkyscraperClueStrengthWeightFactory.class)
 
-    /** TODO: What is this used for? Is this necessary? **/
+
+
+    /** Return a string with the row index for debugging: **/
     @Override
     public String toString() {
         // "Cell[row, column, entry]":

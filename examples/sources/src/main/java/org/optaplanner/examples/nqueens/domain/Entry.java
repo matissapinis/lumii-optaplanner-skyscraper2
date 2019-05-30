@@ -9,44 +9,40 @@ import org.optaplanner.examples.nqueens.app.Skyscraper;
 public class Entry implements Serializable {
     private int id;
     private int value;
-<<<<<<< HEAD
     private static int count; ///
-=======
->>>>>>> skyscraper3
+
     // Planning variable:
     @PlanningVariable
     private Cell cell;
 
-<<<<<<< HEAD
-    /** TODO: Not sure how to use an entry counter as ID ennumerator:
+
+
+    /** TODO: Not sure how to use an entry counter as ID enumerator: **/
+    /**
     public Entry() {
         this(++count);
     }
     **/
 
     /** Initialize entry: **/
+    /// public Entry(int id, Cell cell) {
+    /// public Entry(Cell cell) {
     public Entry() {
-        /// this.id = count;
-=======
-    private Entry(int id) {
-        this.id = id;
->>>>>>> skyscraper3
+        /// this.id = id;
         this.value = -1;
+        /// this.cell = cell;
     }
 
+
+
     /** Get entry ID **/ // Don't know whether this is necessary.
-    public int get_id() {
+    public int get_entry_id() {
         return this.id;
     }
 
-    /** Set and get entry value: **/
-<<<<<<< HEAD
-=======
-    public int get_entry_value() {
-        return this.value;
-    }
 
->>>>>>> skyscraper3
+
+    /** Set and get entry value: **/
     public void set_entry_value(int value) {
         if (value < Skyscraper.minimum_entry_value || value > Skyscraper.maximum_entry_value) {
             throw new IllegalArgumentException("Entry values should be from 1 to 4!");
@@ -55,19 +51,13 @@ public class Entry implements Serializable {
         this.value = value;
     }
 
-<<<<<<< HEAD
     public int get_entry_value() {
         return this.value;
     }
 
-=======
->>>>>>> skyscraper3
-    @Override
-    public String toString() {
-        // "Number[id, value]":
-        return "Number[" + this.id + ", " + this.value + "]";
-    }
 
+
+    /** Set and get entry cell: **/
     public Cell get_entry_cell() {
         return this.cell;
     }
@@ -76,12 +66,26 @@ public class Entry implements Serializable {
         this.cell = cell;
     }
 
+
+
+    /** Get cell index as pair of row-column incides: **/
     public int[] get_cell_idx() {
         if (cell != null) {
             return new int[]{cell.get_row_idx(), cell.get_column_idx()};
         }
         return new int[]{-1, -1};
     }
+
+
+
+    /** Return a string with the row index for debugging: **/
+    @Override
+    public String toString() {
+        // "Cell[id, value]":
+        return "Cell[" + this.id + ", " + this.value + "]";
+    }
+
+
 
     /** Not sure what the overridden hashing is for: **/
     @Override
@@ -93,6 +97,8 @@ public class Entry implements Serializable {
     }
     /**************************************************/
 
+
+    /** Not sure what comparing two object IDs is for: **/
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -102,4 +108,5 @@ public class Entry implements Serializable {
         if (id != other.id) return false;
         return true;
     }
+    /***************************************************/
 }
