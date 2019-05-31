@@ -71,7 +71,7 @@ public class Row extends AbstractPersistable implements Labeled {
 
 
 
-    /** Return a string with the row index for debugging: **/
+    /** Return a string with row index for debugging: **/
     @Override // Obligatory override for method from implemented class Labeled in superclass AbstractPersistable.
     public String getLabel() {
         // "Row[idx]":

@@ -70,7 +70,7 @@ public class Column extends AbstractPersistable {
 
 
 
-    /** Return a string with the row index for debugging: **/
+    /** Return a string with column index for debugging: **/
     public String print_idx() {
         // "Column[idx]":
         return "Column[" + this.idx + "]";
