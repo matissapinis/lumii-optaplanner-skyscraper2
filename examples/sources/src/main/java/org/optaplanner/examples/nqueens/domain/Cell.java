@@ -15,26 +15,16 @@ package org.optaplanner.examples.nqueens.domain;
 /** Dependencies used by OptaPlanner examples: **/
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
-import org.optaplanner.examples.common.domain.AbstractPersistable;
-import org.optaplanner.examples.nqueens.domain.solution.QueenDifficultyWeightFactory;
-import org.optaplanner.examples.nqueens.domain.solution.RowStrengthWeightFactory;
 
 /** Dependencies used by sudoku example: **/
 import java.io.Serializable;
-import java.util.List;
-
-import org.optaplanner.core.api.domain.entity.PlanningEntity;
-import org.optaplanner.core.api.domain.variable.PlanningVariable;
-
-import org.optaplanner.examples.nqueens.domain.solution.SkyscraperDifficultyComparator;
-import org.optaplanner.examples.nqueens.domain.solution.SkyscraperClueStrengthWeightFactory;
 
 // Planning entity:
-@PlanningEntity(difficultyComparatorClass = SkyscraperDifficultyComparator.class)
+@PlanningEntity
 public class Cell implements Serializable {
     private int r_idx;
     private int c_idx;
-    // private int entry;
+    // private int entry; // Is an integer for cell entry a better way to represent the planning variable than a class?
     private Entry entry;
 
 
@@ -75,18 +65,23 @@ public class Cell implements Serializable {
         this.entry.set_entry_value(entry);
     }
 
-    public int get_entry() {
-        return this.entry.get_entry_value();
+    /**
+    A planning variable is a JavaBean property (so a getter and setter) on a planning entity.
+    It points to a planning value, which changes during planning.
+
+    A genuine planning variable getter needs to be annotated with the @PlanningVariable annotation,
+    which needs a non-empty valueRangeProviderRefs property.
+    **/
+    @PlanningVariable(valueRangeProviderRefs = {"entry_value_range"})
+    public Entry get_entry() {
+    // public int get_entry() {                 //
+        return this.entry;
+        // return this.entry.get_entry_value(); // Is this an incorrect way to plan the entry values?
     }
 
 
 
-    /** TODO: How do I work with this? **/
-    @PlanningVariable(valueRangeProviderRefs = {"numberRange"},strengthWeightFactoryClass = SkyscraperClueStrengthWeightFactory.class)
-
-
-
-    /** Return a string with the row index for debugging: **/
+    /** Return a string with the cell indices and entry value for debugging: **/
     @Override
     public String toString() {
         // "Cell[row, column, entry]":
