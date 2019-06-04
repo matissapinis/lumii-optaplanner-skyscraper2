@@ -61,8 +61,8 @@ public class Cell implements Serializable {
 
 
     /** Set and get cell entry value: **/
-    public void set_entry(int entry) {
-        this.entry.set_entry_value(entry);
+    public void set_entry(Entry entry) {
+        this.entry = entry;
     }
 
     /**

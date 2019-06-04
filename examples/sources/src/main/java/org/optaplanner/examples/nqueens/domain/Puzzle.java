@@ -30,6 +30,8 @@ import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.simple.SimpleScore;
 
 import org.optaplanner.examples.nqueens.app.Skyscraper;
+import org.optaplanner.examples.nqueens.domain.Cell;
+import org.optaplanner.examples.nqueens.domain.Entry;
 
 // Planning solution:
 @PlanningSolution
@@ -54,8 +56,8 @@ public class Puzzle implements Solution<SimpleScore> {
     private Puzzle() {
         /** Approach with 2D grid of cells for O(1) operations: **/
         /** TODO: How to create a 2D array of objects in Java? **/
-        this.grid = new ArrayList[Skyscraper.row_count][Skyscraper.column_count];
-        this.entries = new ArrayList[Skyscraper.row_count][Skyscraper.column_count];
+        this.grid = new Cell[Skyscraper.row_count][Skyscraper.column_count];
+        this.entries = new Entry[Skyscraper.row_count][Skyscraper.column_count];
 
 
         /** Previous approach with O(n) cell operations:
@@ -122,7 +124,7 @@ public class Puzzle implements Solution<SimpleScore> {
 
 
     /** Set and get puzzle board cell entry: **/
-    public void set_cell_entry(int r_idx, int c_idx, int entry) {
+    public void set_cell_entry(int r_idx, int c_idx, Entry entry) {
         /** Approach with 2D grid of cells for O(1) operations: **/
         this.grid[r_idx][c_idx].set_entry(entry);
 
@@ -143,7 +145,7 @@ public class Puzzle implements Solution<SimpleScore> {
         **/
     }
 
-    public int get_cell_entry(int r_idx, int c_idx, int entry) {
+    public Entry get_cell_entry(int r_idx, int c_idx) {
         /** Approach with 2D grid of cells for O(1) operations: **/
         return this.grid[r_idx][c_idx].get_entry();
 
@@ -164,49 +166,61 @@ public class Puzzle implements Solution<SimpleScore> {
     }
 
 
+
+    /** Set and get puzzle board cell entry value: **/
+    public void set_cell_entry_value(int r_idx, int c_idx, int value) {
+        this.grid[r_idx][c_idx].get_entry().set_entry_value(value);
+    }
+
+    public int get_cell_entry_value(int r_idx, int c_idx) {
+        return this.grid[r_idx][c_idx].get_entry().get_entry_value();
+    }
+
+
+
+    /** Set and get grid of entries: **/
+    public void set_entires(Entry[][] entries) {
+        this.entries = entries;
+    }
+
     /**
     The valueRangeProviderRefs property defines what are the possible planning values for this planning variable.
     It references one or more @ValueRangeProvider id's.
     **/
     @ValueRangeProvider(id = "entry_value_range")
     public Entry[][] get_entries() {
+        return this.entries;
+    }
 
+
+
+    /** Set and get the planning solution score: **/
+    public void setScore(SimpleScore score) {
+        this.score = score;
     }
 
     public SimpleScore getScore() {
         return score;
     }
 
-    public void setScore(SimpleScore score) {
-        this.score = score;
-    }
 
+
+    /** "Called by the DroolsScoreDirector when the PlanningSolution needs to be inserted into an empty KieSession." **/
     @Override
     public Collection<? extends Object> getProblemFacts() {
         List<Object> facts = new ArrayList<Object>();
-        facts.addAll(clues);
+        // facts.addAll(clues); // How to put the clues from my class Row fields in a list?
 
+        /** This comment is from lumii-optaplanner-sudoku:
         // Do not add the planning entity's (cells) because that will be done automatically
+        **/
         return facts;
     }
 
-    /** TODO: Fix this dependency! **/
-    public PuzzleCell getCell(int rowIndex, int colIndex){
-        PuzzleCell cellToReturn = null;
-        /** TODO: Fix this dependency! **/
-        if ((rowIndex < 1 || rowIndex > Skyscraper.maxNumberOfRows) ||
-                (colIndex < 1 || colIndex > Skyscraper.maxNumberOfColumns)) {
-            throw new IllegalArgumentException("Row index or Col index is out of bound!");
-        }
 
-        for (Iterator iterator = cells.iterator(); iterator.hasNext();) {
-            PuzzleCell cell = (PuzzleCell) iterator.next();
-            /** TODO: Fix this dependency! **/
-            if (cell.getRowIndex() == rowIndex && cell.getColIndex() == colIndex) {
-                cellToReturn = cell;
-                break;
-            }
-        }
-        return cellToReturn;
+
+    /** Get a cell from the grid by its row and column indices: **/
+    public Cell get_cell_by_indices(int r_idx, int c_idx) {
+        return this.grid[r_idx][c_idx];
     }
 }
