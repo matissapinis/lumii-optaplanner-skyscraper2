@@ -53,7 +53,7 @@ public class Puzzle implements Solution<SimpleScore> {
 
 
     /** Initialize puzzle board: **/
-    private Puzzle() {
+    public Puzzle() {
         /** Approach with 2D grid of cells for O(1) operations: **/
         /** TODO: How to create a 2D array of objects in Java? **/
         this.grid = new Cell[Skyscraper.row_count][Skyscraper.column_count];
@@ -70,12 +70,12 @@ public class Puzzle implements Solution<SimpleScore> {
 
 
     /** Create puzzle board as grid of cells: **/
-    private void create_puzzle() {
+    public void create_puzzle() {
         /** Approach with 2D grid of cells for O(1) operations: **/
         // Initialize cells in grid with entry value -1:
-        for (int i = 0; i < Skyscraper.row_count; i++) {
-            for (int j = 0; j < Skyscraper.column_count; j++) {
-                grid[i][j] = new Cell(i, j);
+        for (int i = 0; i < this.grid.length; i++) {
+            for (int j = 0; j < this.grid[i].length; j++) {
+                this.grid[i][j] = new Cell(i, j);
             }
         }
 
@@ -205,6 +205,7 @@ public class Puzzle implements Solution<SimpleScore> {
 
 
 
+    /** TODO: Not sure what to do with this. **/
     /** "Called by the DroolsScoreDirector when the PlanningSolution needs to be inserted into an empty KieSession." **/
     @Override
     public Collection<? extends Object> getProblemFacts() {

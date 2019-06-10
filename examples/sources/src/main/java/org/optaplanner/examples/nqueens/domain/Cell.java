@@ -24,6 +24,8 @@ import java.io.Serializable;
 public class Cell implements Serializable {
     private int r_idx;
     private int c_idx;
+    private Row row;
+    private Column column;
     // private int entry; // Is an integer for cell entry a better way to represent the planning variable than a class?
     private Entry entry;
 
@@ -33,7 +35,35 @@ public class Cell implements Serializable {
     public Cell(int r_idx, int c_idx) {
         this.r_idx = r_idx;
         this.c_idx = c_idx;
+
+        this.row = new Row();
+        this.row.set_idx(r_idx);
+        this.column = new Column();
+        this.column.set_idx(c_idx);
+
         this.entry = new Entry();
+    }
+
+
+
+    /** Set and get cell row: **/
+    public void set_row(Row row) {
+        this.row = row;
+    }
+
+    public Row get_row() {
+        return this.row;
+    }
+
+
+
+    /** Set and get cell column: **/
+    public void set_column(Column column) {
+        this.column = column;
+    }
+
+    public Column get_column() {
+        return this.column;
     }
 
 
