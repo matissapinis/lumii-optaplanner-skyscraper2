@@ -10,38 +10,49 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Iterator;
 
-import org.optaplanner.examples.nqueens.domain.PuzzleCell;
+import org.optaplanner.examples.nqueens.domain.Cell;
+import org.optaplanner.examples.nqueens.domain.Puzzle;
 
 public class SkyscraperHelloWorld {
-    SkyscraperPuzzle unSolvedPuzzle = null;
-    SkyscraperPuzzle solvedPuzzle = null;
+    Puzzle unSolvedPuzzle = null;
+    Puzzle solvedPuzzle = null;
+
     /** Commented out to simplify project:
     protected final transient Logger logger = LoggerFactory.getLogger(getClass());
     **/
+
+
 
     public SkyscraperHelloWorld() {
         this.unSolvedPuzzle = null;
         this.solvedPuzzle = null;
     }
 
+
+
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         SkyscraperHelloWorld sh = new SkyscraperHelloWorld();
-        sh.init();
+        this.sh.init();
     }
+
+
 
     public void init(){
         long startTime = System.currentTimeMillis();
         SkyscraperPuzzleGenerator generator = new SkyscraperPuzzleGenerator();
-        unSolvedPuzzle = generator.generateSkyscraperPuzzle();
+        this.unSolvedPuzzle = generator.generate_puzzle();
+
         //printSolvedSolution(unSolvedBoard);
         //logger.info("Numbers =>"+unSolvedBoard.getNumbers());
-        // Build the Solver
+
+        /// TBC:
+        /** TODO: Configure the solver to build the solver: **/
         SolverFactory solverFactory =
                 SolverFactory.createFromXmlResource("org/optaplanner/examples/nqueens/solver/skyscraperSolverConfig.xml");
         Solver solver = solverFactory.buildSolver();
 
-        // Solve the problem
+        /** TODO: Configure the solver to solve the problem: **/
         solver.solve(unSolvedPuzzle);
         solvedPuzzle = (SkyscraperPuzzle) solver.getBestSolution();
         printSolvedSolution(solvedPuzzle);
