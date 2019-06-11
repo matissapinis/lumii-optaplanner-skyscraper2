@@ -46,15 +46,12 @@ public class SkyscraperHelloWorld {
         //printSolvedSolution(unSolvedBoard);
         //logger.info("Numbers =>"+unSolvedBoard.getNumbers());
 
-        /// TBC:
-        /** TODO: Configure the solver to build the solver: **/
         SolverFactory solverFactory =
                 SolverFactory.createFromXmlResource("org/optaplanner/examples/nqueens/solver/skyscraperSolverConfig.xml");
         Solver solver = solverFactory.buildSolver();
 
-        /** TODO: Configure the solver to solve the problem: **/
         solver.solve(unSolvedPuzzle);
-        solvedPuzzle = (SkyscraperPuzzle) solver.getBestSolution();
+        solvedPuzzle = (Puzzle) solver.getBestSolution();
         printSolvedSolution(solvedPuzzle);
 
         /** Commented out to simplify project:
@@ -65,24 +62,11 @@ public class SkyscraperHelloWorld {
         //printRegions(solvedBoard);
     }
 
-    public void printSides(SkyscraperPuzzle puzzle){
-        for (Iterator cellIterator = puzzle.getCells().iterator(); cellIterator.hasNext();) {
-            PuzzleCell cell = (PuzzleCell) cellIterator.next();
-            /** Commented out to simplify project:
-             logger.info("Cell " + cell);
-             **/
-            //System.out.println(" Cell Region=> "+cell.getRegion());
-        }
 
-        for (Iterator iterator = puzzle.getSides().iterator(); iterator.hasNext();) {
-            Side side = (Side) iterator.next();
-            /** Commented out to simplify project:
-             logger.info("Region => " + region);
-             **/
-        }
-    }
-    
-    public void printSolvedSolution(SkyscraperPuzzle puzzle){
+
+    /** Outputs the solved skyscraper puzzle problem in the system console: **/
+    public void printSolvedSolution(Puzzle puzzle){
+        /// TBC:
         // System.out.println(cells);
         for (int i = 0; i < Skyscraper.maxNumberOfColumns; i++) {
             if ((i % Skyscraper.numberOfColsInSide) == 0) { System.out.print("|"); }
