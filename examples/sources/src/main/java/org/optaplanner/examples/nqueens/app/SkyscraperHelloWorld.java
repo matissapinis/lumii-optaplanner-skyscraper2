@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 **/
 
 import java.util.Iterator;
+import java.lang.String.*;
 
 import org.optaplanner.examples.nqueens.domain.Cell;
 import org.optaplanner.examples.nqueens.domain.Puzzle;
@@ -17,12 +18,14 @@ public class SkyscraperHelloWorld {
     Puzzle unSolvedPuzzle = null;
     Puzzle solvedPuzzle = null;
 
-    /** Commented out to simplify project:
-    protected final transient Logger logger = LoggerFactory.getLogger(getClass());
+    /**
+    * Commented out to simplify project:
+    * protected final transient Logger logger = LoggerFactory.getLogger(getClass());
     **/
 
 
 
+    /** Initializes skyscraper puzzle for solving: **/
     public SkyscraperHelloWorld() {
         this.unSolvedPuzzle = null;
         this.solvedPuzzle = null;
@@ -30,6 +33,7 @@ public class SkyscraperHelloWorld {
 
 
 
+    /** Main function that launches the program: **/
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         SkyscraperHelloWorld sh = new SkyscraperHelloWorld();
@@ -38,7 +42,8 @@ public class SkyscraperHelloWorld {
 
 
 
-    public void init(){
+    /** Solves a generated skyscraper puzzle by calling solver: **/
+    public void init() {
         long startTime = System.currentTimeMillis();
         SkyscraperPuzzleGenerator generator = new SkyscraperPuzzleGenerator();
         this.unSolvedPuzzle = generator.generate_puzzle();
@@ -64,34 +69,37 @@ public class SkyscraperHelloWorld {
 
 
 
-    /** Outputs the solved skyscraper puzzle problem in the system console: **/
-    public void printSolvedSolution(Puzzle puzzle){
+    /** Outputs the solved skyscraper puzzle in the system console: **/
+    public void printSolvedSolution(Puzzle puzzle) {
         /// TBC:
         // System.out.println(cells);
-        for (int i = 0; i < Skyscraper.maxNumberOfColumns; i++) {
-            if ((i % Skyscraper.numberOfColsInSide) == 0) { System.out.print("|"); }
-            System.out.print("-");
+
+        /**
+         1) Print ' ' + top clues ' '.
+         2) Print left clue + row + right clue for all rows.
+         3) Print ' ' + bottom clues ' '.
+         **/
+
+        Cell[][] grid = puzzle.get_grid();
+
+        System.out.printf(" ");
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+            System.out.printf(String.valueOf(grid[0][i].get_column().get_T_clue()) + " ");
         }
-        System.out.print("|");
 
-        for (int i = 1; i <= Skyscraper.maxNumberOfRows; i++) {
-            System.out.println();
-            System.out.print("|");
-            for (int j = 1; j <= Skyscraper.maxNumberOfColumns; j++) {
-                //System.out.println("i "+i+" J "+j);
-                PuzzleCell c = puzzle.getCell(i, j);
-                System.out.print(c.getCellClueValue());
-                if ((j % Skyscraper.numberOfColsInSide) == 0) { System.out.print("|"); }
-            }
+        System.out.printf("%n");
 
-            if ((i % Skyscraper.numberOfRowsInSide) == 0) {
-                System.out.println();
-                for (int k = 0; k < Skyscraper.maxNumberOfColumns; k++) {
-                    if ((k % Skyscraper.numberOfColsInSide) == 0) { System.out.print("|"); }
-                    System.out.print("-");
-                }
-                System.out.print("|");
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+            System.out.printf(String.valueOf(grid[i][0].get_row().get_L_clue()) + " ");
+            for (int j = 0; j < Skyscraper.column_count; j++) {
+                System.out.printf(String.valueOf(grid[i][j].get_entry().get_entry_value()) + " ");
             }
+            System.out.printf(String.valueOf(grid[i][0].get_row().get_R_clue()) + "%n");
+        }
+
+        System.out.printf(" ");
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+            System.out.printf(String.valueOf(grid[0][i].get_column().get_B_clue()) + " ");
         }
     }
 }
