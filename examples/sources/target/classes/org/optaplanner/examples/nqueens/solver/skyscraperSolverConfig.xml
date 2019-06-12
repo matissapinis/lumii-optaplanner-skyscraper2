@@ -3,13 +3,14 @@
   <!-- <environmentMode>FULL_ASSERT</environmentMode> -->
 
   <!-- Domain model configuration -->
-  <solutionClass>org.optaplanner.examples.nqueens.domain.SkyscraperPuzzle</solutionClass>
-  <entityClass>org.optaplanner.examples.nqueens.domain.PuzzleCell</entityClass>
+  <solutionClass>org.optaplanner.examples.nqueens.domain.Puzzle</solutionClass>
+  <entityClass>org.optaplanner.examples.nqueens.domain.Cell</entityClass>
 
   <!-- Score configuration -->
   <scoreDirectorFactory>
     <scoreDefinitionType>SIMPLE</scoreDefinitionType>
-    <scoreDrl>org/optaplanner/examples/nqueens/solver/skyscraperScoreRules.drl</scoreDrl>
+    <simpleScoreCalculatorClass>org.optaplanner.examples.nqueens.solver.SkyscraperSimpleScoreCalculator</simpleScoreCalculatorClass>
+    <!--<scoreDrl>org/optaplanner/examples/nqueens/solver/skyscraperScoreRules.drl</scoreDrl> <!-skyscraper3-> -->
     <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
     <!--<assertionScoreDirectorFactory>-->
     <!--<easyScoreCalculatorClass>org.optaplanner.examples.cloudbalancing.solver.score.CloudBalancingMapBasedEasyScoreCalculator</easyScoreCalculatorClass>-->

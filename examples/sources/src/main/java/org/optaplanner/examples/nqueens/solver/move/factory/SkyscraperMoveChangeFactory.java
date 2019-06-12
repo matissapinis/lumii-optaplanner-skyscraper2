@@ -12,13 +12,6 @@ import org.optaplanner.examples.nqueens.domain.Puzzle;
 import org.optaplanner.examples.nqueens.solver.move.factory.SkyscraperClueChangeMove;
 
 /**
-Previously (prior to reboot when Maven compilation worked):
-'createUndoMove(ScoreDirector)' in 'org.optaplanner.examples.nqueens.solver.move.factory.SudokuNumberChangeMove'
-clashes with 'createUndoMove(ScoreDirector<Solution_>)' in 'org.optaplanner.core.impl.heuristic.move.AbstractMove';
-attempting to use incompatible return type
-**/
-
-/**
 [This class] is not abstract and does not override abstract method in [OptaPlanner cores files for heuristics].
 **/
 

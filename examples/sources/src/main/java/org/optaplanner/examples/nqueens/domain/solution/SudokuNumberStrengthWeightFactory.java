@@ -4,8 +4,6 @@ package org.optaplanner.examples.nqueens.domain.solution;
 import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.optaplanner.core.impl.heuristic.selector.common.decorator.SelectionSorterWeightFactory;
 
-import org.optaplanner.examples.nqueens.domain.SudokuBoard;
-
 public class SudokuNumberStrengthWeightFactory implements SelectionSorterWeightFactory<SudokuBoard, Number> {
     @Override
     public Comparable createSorterWeight(SudokuBoard solution, Number selection) {

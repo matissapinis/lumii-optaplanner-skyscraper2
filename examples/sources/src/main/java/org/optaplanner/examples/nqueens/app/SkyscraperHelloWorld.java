@@ -37,7 +37,7 @@ public class SkyscraperHelloWorld {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         SkyscraperHelloWorld sh = new SkyscraperHelloWorld();
-        this.sh.init();
+        sh.init();
     }
 
 
