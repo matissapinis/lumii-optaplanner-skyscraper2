@@ -1,4 +1,4 @@
-#Tue May 28 15:35:07 EEST 2019
+#Wed Jun 12 15:11:57 EEST 2019
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\conferencescheduling\\solver\\ConferenceSchedulingScoreHardConstraintTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\tsp\\solver\\score\\TspEasyScoreCalculator.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\common\\persistence\\AbstractXmlSolutionImporter.java=1552466572000
@@ -14,8 +14,8 @@ C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\vehiclerouting\\domain\\solver\\nearby\\CustomerNearbyDistanceMeter.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\cloudbalancing\\app\\CloudBalancingRealTimePlanningTurtleTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cloudbalancing\\optional\\realtime\\DeleteComputerProblemFactChange.java=1552466572000
-C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nurserostering\\solver\\move\\factory\\ShiftAssignmentPillarPartSwapMoveFactory.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cloudbalancing\\app\\CloudBalancingHelloWorld.java=1552466572000
+C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nurserostering\\solver\\move\\factory\\ShiftAssignmentPillarPartSwapMoveFactory.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nurserostering\\persistence\\NurseRosteringExporter.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\flightcrewscheduling\\app\\FlightCrewSchedulingPerformanceTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nqueens\\solver\\score\\NQueensEasyScoreCalculator.java=1552466572000
@@ -27,8 +27,8 @@ C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\tennis\\domain\\UnavailabilityPenalty.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cloudbalancing\\optional\\realtime\\DeleteProcessProblemFactChange.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\taskassigning\\solver\\TaskAssigningScoreConstraintTest.java=1552466574000
-C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\pas\\domain\\RoomSpecialism.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\pas\\domain\\PreferredPatientEquipment.java=1552466574000
+C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\pas\\domain\\RoomSpecialism.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\travelingtournament\\app\\TravelingTournamentBenchmarkConfigTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cloudbalancing\\optional\\move\\CloudProcessSwapMove.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\tsp\\domain\\Domicile.java=1552466574000
@@ -40,8 +40,8 @@ C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\examination\\domain\\solver\\RoomStrengthWeightFactory.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cloudbalancing\\domain\\CloudComputer.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\machinereassignment\\domain\\MrGlobalPenaltyInfo.java=1552466572000
-C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cheaptime\\domain\\solver\\TaskAssignmentDifficultyComparator.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nurserostering\\domain\\solver\\ShiftAssignmentDifficultyComparator.java=1552466572000
+C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cheaptime\\domain\\solver\\TaskAssignmentDifficultyComparator.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\pas\\persistence\\PatientAdmissionScheduleExporter.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nqueens\\domain\\solution\\RowStrengthWeightFactory.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nqueens\\solver\\move\\factory\\RowChangeMoveFactory.java=1552466572000
@@ -49,9 +49,9 @@ C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\dinnerparty\\app\\DinnerPartySolveAllTurtleTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\vehiclerouting\\solver\\score\\VehicleRoutingEasyScoreCalculator.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\curriculumcourse\\app\\CurriculumCoursePerformanceTest.java=1552466574000
-C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\examination\\persistence\\ExaminationImporter.java=1552466572000
-C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\investment\\app\\InvestmentSolveAllTurtleTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\app\\GeneralBenchmarkConfigTest.java=1552466574000
+C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\investment\\app\\InvestmentSolveAllTurtleTest.java=1552466574000
+C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\examination\\persistence\\ExaminationImporter.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\nurserostering\\app\\NurseRosteringPerformanceTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nurserostering\\solver\\drools\\EmployeeConsecutiveAssignmentEnd.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\vehiclerouting\\domain\\solver\\DepotDistanceCustomerDifficultyWeightFactory.java=1552466574000
@@ -332,7 +332,7 @@ C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\test\\java\\org\\optaplanner\\examples\\cloudbalancing\\app\\CloudBalancingConstructionHeuristicTest.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\travelingtournament\\solver\\move\\factory\\InverseMatchSwapMoveFilter.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nqueens\\solver\\solution\\CheatingNQueensPhaseCommand.java=1552466572000
-C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nqueens\\domain\\solution\\SudokuDifficultyComparator.java=1557319016237
+C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\nqueens\\domain\\solution\\SudokuDifficultyComparator.java=1559134034988
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\cheaptime\\solver\\CheapTimeCostCalculator.java=1552466572000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\tennis\\app\\TennisApp.java=1552466574000
 C\:\\Users\\PC\\Desktop\\lumii-optaplanner-skyscraper2\\examples\\sources\\src\\main\\java\\org\\optaplanner\\examples\\tsp\\domain\\solver\\DomicileAngleVisitDifficultyWeightFactory.java=1552466574000

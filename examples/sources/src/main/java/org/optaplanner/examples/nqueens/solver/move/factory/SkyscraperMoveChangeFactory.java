@@ -19,11 +19,11 @@ public class SkyscraperMoveChangeFactory implements MoveListFactory<Puzzle> {
     /**
     [This method] does not override or implement a method from a supertype.
     **/
-    @Override
     /**
     [This method] cannot implement [the method in OptaPlanner cores files for heuristics].
     **/
     // Previously: <? extends Move> etc.
+    @Override
     public List<? extends SkyscraperClueChangeMove> createMoveList(Puzzle solution) {
         // TODO Auto-generated method stub
         Cell[][] grid = solution.get_grid();

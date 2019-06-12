@@ -38,11 +38,13 @@ public class Column extends AbstractPersistable {
 
 
     /** Set and get column index: **/
-    public void set_idx(int idx) {
+    // public void set_idx(int idx) { :: Replaced with identifier used by NQueens.
+    public void setIndex(int idx) {
         this.idx = idx;
     }
 
-    public int get_idx() {
+    // public int get_idx() { :: Replaced with identifier used by NQueens.
+    public int getIndex() {
         return this.idx;
     }
 
