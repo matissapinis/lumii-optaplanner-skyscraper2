@@ -419,6 +419,7 @@ org\optaplanner\examples\curriculumcourse\swingui\CurriculumCoursePanel.class
 org\optaplanner\examples\cheaptime\app\CheapTimeBenchmarkApp.class
 org\optaplanner\examples\nurserostering\domain\SkillProficiency.class
 org\optaplanner\examples\rocktour\swingui\RockTourWorldPanel$1.class
+org\optaplanner\examples\nqueens\solver\SkyscraperEasyScoreCalculator.class
 org\optaplanner\examples\coachshuttlegathering\persistence\CoachShuttleGatheringImporter$CoachShuttleGatheringInputBuilder.class
 org\optaplanner\examples\cheaptime\solver\score\CheapTimeEasyScoreCalculator$1.class
 org\optaplanner\examples\common\swingui\SolverAndPersistenceFrame$SaveAction.class

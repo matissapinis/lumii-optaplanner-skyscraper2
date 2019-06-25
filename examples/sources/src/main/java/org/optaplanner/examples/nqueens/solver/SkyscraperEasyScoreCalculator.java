@@ -1,24 +1,18 @@
-package org.optaplanner.examples.nqueens.solver.move.factory;
+package org.optaplanner.examples.nqueens.solver;
 
-import org.apache.commons.lang3.ObjectUtils;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.optaplanner.core.impl.heuristic.move.AbstractMove;
-import org.optaplanner.core.impl.score.director.ScoreDirector;
+import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.optaplanner.core.api.score.buildin.simple.SimpleScore;
-import org.optaplanner.core.api.score.AbstractScore;
+import org.optaplanner.examples.nqueens.app.Skyscraper;
+import org.optaplanner.examples.nqueens.domain.Cell;
+import org.optaplanner.examples.nqueens.domain.Entry;
+import org.optaplanner.examples.nqueens.domain.Puzzle;
+
+import java.util.Arrays;
+
 // import org.optaplanner.core.api.domain.solution.PlanningScore;
 
-import org.optaplanner.examples.nqueens.app.Skyscraper;
-import org.optaplanner.examples.nqueens.domain.Puzzle;
-import org.optaplanner.examples.nqueens.domain.Cell;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.lang.Math.abs;
-
-
-public class SkyscraperSimpleScoreCalculator implements SimpleScoreCalculator<NQueens> {
+public class SkyscraperEasyScoreCalculator implements EasyScoreCalculator<Puzzle> {
 
     public SimpleScore calculateScore(Puzzle puzzle) {
         // @PlanningScore
@@ -38,11 +32,11 @@ public class SkyscraperSimpleScoreCalculator implements SimpleScoreCalculator<NQ
         for (int i = 0; i < Skyscraper.row_count; i++) {
             for (int j = 0; j < Skyscraper.column_count; j++) {
                 /** Meanwhile also decrease score for cell entries out of ruled bounds: **/
-                if (entries[i][j] < 0 || entries[i][j] > Skyscraper.row_count) {
+                if (entries[i][j].get_entry_value() < 0 || entries[i][j].get_entry_value() > Skyscraper.row_count) {
                     bounds_score += -100;
                 }
 
-                duplicate_counts[i][entries[i][j] - 1]++;
+                duplicate_counts[i][entries[i][j].get_entry_value() - 1]++;
             }
         }
 
@@ -69,25 +63,25 @@ public class SkyscraperSimpleScoreCalculator implements SimpleScoreCalculator<NQ
         int[] B_sight_count = new int[Skyscraper.column_count];
         Arrays.fill(B_sight_count, 1);
 
-        for (int i = 1, int ii = Skyscraper.row_count - 1; i < Skyscraper.row_count + 1; i++, ii--) {
-            for (int j = 1, int jj = Skyscraper.column_count - 1; j < Skyscraper.column_count + 1; j++, jj--) {
+        for (int i = 1, ii = Skyscraper.row_count - 1; i < Skyscraper.row_count + 1; i++, ii--) {
+            for (int j = 1, jj = Skyscraper.column_count - 1; j < Skyscraper.column_count + 1; j++, jj--) {
                 // Checks all rows left to right:
-                if (entries[i - 1][j - 1] < entries[i - 1][j]) {
+                if (entries[i - 1][j - 1].get_entry_value() < entries[i - 1][j].get_entry_value()) {
                     L_sight_count[i - 1]++;
                 }
 
                 // Checks all columns top to bottom:
-                if (entries[j - 1][i - 1] < entries[j][i - 1]) {
+                if (entries[j - 1][i - 1].get_entry_value() < entries[j][i - 1].get_entry_value()) {
                     T_sight_count[j - 1]++;
                 }
 
                 // Checks all rows right to left:
-                if (entries[ii][jj] < entries[ii][jj - 1]) {
+                if (entries[ii][jj].get_entry_value() < entries[ii][jj - 1].get_entry_value()) {
                     R_sight_count[ii]++;
                 }
 
                 // Checks all columns bottom to left;
-                if (entries[jj][ii] < entries[jj - 1][ii]) {
+                if (entries[jj][ii].get_entry_value() < entries[jj - 1][ii].get_entry_value()) {
                     B_sight_count[jj]++;
                 }
             }
@@ -102,11 +96,11 @@ public class SkyscraperSimpleScoreCalculator implements SimpleScoreCalculator<NQ
                 sight_score += -1 * Math.abs(L_sight_count[i] - grid[i][0].get_row().get_L_clue());
             }
 
-            if (T_sight_count[i] != grid[0][i].get_row().get_T_clue()) {
+            if (T_sight_count[i] != grid[0][i].get_column().get_T_clue()) {
                 sight_score += -1 * Math.abs(T_sight_count[i] - grid[0][i].get_column().get_T_clue());
             }
 
-            if (B_sight_count[i] != grid[0][i].get_row().get_B_clue()) {
+            if (B_sight_count[i] != grid[0][i].get_column().get_B_clue()) {
                 sight_score += -1 * Math.abs(B_sight_count[i] - grid[0][i].get_column().get_B_clue());
             }
         }

@@ -10,7 +10,7 @@
   <scoreDirectorFactory>
     <scoreDefinitionType>SIMPLE</scoreDefinitionType>
     <!--<simpleScoreCalculatorClass>org.optaplanner.examples.nqueens.solver.SkyscraperSimpleScoreCalculator</simpleScoreCalculatorClass><!-ERROR->-->
-    <easyScoreCalculatorClass>org.optaplanner.examples.nqueens.solver.SkyscraperSimpleScoreCalculator</easyScoreCalculatorClass>
+    <easyScoreCalculatorClass>org.optaplanner.examples.nqueens.solver.SkyscraperEasyScoreCalculator</easyScoreCalculatorClass>
     <!--<scoreDrl>org/optaplanner/examples/nqueens/solver/skyscraperScoreRules.drl</scoreDrl> <!-skyscraper3-> -->
     <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
     <!--<assertionScoreDirectorFactory>-->
