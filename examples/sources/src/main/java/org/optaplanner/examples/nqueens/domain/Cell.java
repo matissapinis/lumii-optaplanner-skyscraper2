@@ -26,6 +26,7 @@ public class Cell implements Serializable {
     private int c_idx;
     private Row row;
     private Column column;
+    // Planning variable:
     // private int entry; // Is an integer for cell entry a better way to represent the planning variable than a class?
     private Entry entry;
 

@@ -10,9 +10,6 @@ public class Entry implements Serializable {
     private int id;
     private int value;
     private static int count; ///
-
-    // Planning variable:
-    @PlanningVariable
     private Cell cell;
 
 

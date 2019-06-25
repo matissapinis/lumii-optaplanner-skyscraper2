@@ -25,18 +25,29 @@ import java.util.Iterator;
 
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
+import org.optaplanner.core.api.domain.solution.PlanningScore;
 import org.optaplanner.core.api.domain.solution.Solution;
+import org.optaplanner.core.api.domain.solution.drools.ProblemFactCollectionProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.simple.SimpleScore;
 
+import org.optaplanner.examples.common.domain.AbstractPersistable;
 import org.optaplanner.examples.nqueens.app.Skyscraper;
 import org.optaplanner.examples.nqueens.domain.Cell;
 import org.optaplanner.examples.nqueens.domain.Entry;
 
 // Planning solution:
 @PlanningSolution
-public class Puzzle implements Solution<SimpleScore> {
+public class Puzzle extends AbstractPersistable {
     // Planning entity:
+    ///
+    private List<Column> column_list; // P. facts
+    private List<Row> row_list; // P. facts
+
+    private List<Cell> cell_list; // P. entity
+    private List<Entry> entry_list; // P. facts
+
+
     /** Approach with 2D grid of cells for O(1) operations: **/
     private Cell[][] grid;
     private Entry[][] entries;
@@ -54,6 +65,9 @@ public class Puzzle implements Solution<SimpleScore> {
 
     /** Initialize puzzle board: **/
     public Puzzle() {
+        /** TODO: Create all the List variables without null default values. **/
+        /// TBC:
+
         /** Approach with 2D grid of cells for O(1) operations: **/
         /** TODO: How to create a 2D array of objects in Java? **/
         this.grid = new Cell[Skyscraper.row_count][Skyscraper.column_count];
@@ -187,7 +201,6 @@ public class Puzzle implements Solution<SimpleScore> {
     The valueRangeProviderRefs property defines what are the possible planning values for this planning variable.
     It references one or more @ValueRangeProvider id's.
     **/
-    @ValueRangeProvider(id = "entry_value_range")
     public Entry[][] get_entries() {
         return this.entries;
     }
@@ -199,23 +212,9 @@ public class Puzzle implements Solution<SimpleScore> {
         this.score = score;
     }
 
+    @PlanningScore
     public SimpleScore getScore() {
         return score;
-    }
-
-
-
-    /** TODO: Not sure what to do with this. **/
-    /** "Called by the DroolsScoreDirector when the PlanningSolution needs to be inserted into an empty KieSession." **/
-    @Override
-    public Collection<? extends Object> getProblemFacts() {
-        List<Object> facts = new ArrayList<Object>();
-        // facts.addAll(clues); // How to put the clues from my class Row fields in a list?
-
-        /** This comment is from lumii-optaplanner-sudoku:
-        // Do not add the planning entity's (cells) because that will be done automatically
-        **/
-        return facts;
     }
 
 
@@ -223,5 +222,49 @@ public class Puzzle implements Solution<SimpleScore> {
     /** Get a cell from the grid by its row and column indices: **/
     public Cell get_cell_by_indices(int r_idx, int c_idx) {
         return this.grid[r_idx][c_idx];
+    }
+
+
+
+    @ProblemFactCollectionProperty
+    public List<Column> getColumn_list() {
+        return column_list;
+    }
+
+    public void setColumn_list(List<Column> column_list) {
+        this.column_list = column_list;
+    }
+
+
+
+    @ProblemFactCollectionProperty
+    public List<Row> getRow_list() {
+        return row_list;
+    }
+
+    public void setRow_list(List<Row> row_list) {
+        this.row_list = row_list;
+    }
+
+
+
+    @PlanningEntityCollectionProperty
+    public List<Cell> getCell_list() {
+        return cell_list;
+    }
+
+    public void setCell_list(List<Cell> cell_list) {
+        this.cell_list = cell_list;
+    }
+
+
+    @ValueRangeProvider(id = "entry_value_range") // {"entry_value_range"})
+    @ProblemFactCollectionProperty
+    public List<Entry> getEntry_list() {
+        return entry_list;
+    }
+
+    public void setEntry_list(List<Entry> entry_list) {
+        this.entry_list = entry_list;
     }
 }

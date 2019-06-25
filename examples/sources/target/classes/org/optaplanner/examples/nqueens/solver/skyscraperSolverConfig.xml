@@ -8,8 +8,6 @@
 
   <!-- Score configuration -->
   <scoreDirectorFactory>
-    <scoreDefinitionType>SIMPLE</scoreDefinitionType>
-    <!--<simpleScoreCalculatorClass>org.optaplanner.examples.nqueens.solver.SkyscraperSimpleScoreCalculator</simpleScoreCalculatorClass><!-ERROR->-->
     <easyScoreCalculatorClass>org.optaplanner.examples.nqueens.solver.SkyscraperEasyScoreCalculator</easyScoreCalculatorClass>
     <!--<scoreDrl>org/optaplanner/examples/nqueens/solver/skyscraperScoreRules.drl</scoreDrl> <!-skyscraper3-> -->
     <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
@@ -23,24 +21,18 @@
     <bestScoreLimit>0</bestScoreLimit>
   </termination>
   <constructionHeuristic>
-    <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+    <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
   </constructionHeuristic>
   <localSearch>
-    <!--
-   <changeMoveSelector>
-     <selectionOrder>ORIGINAL</selectionOrder>
-   </changeMoveSelector> -->
-    <!--
     <unionMoveSelector>
-      <cacheType>JUST_IN_TIME</cacheType>
-      <selectionOrder>RANDOM</selectionOrder>
       <changeMoveSelector/>
       <swapMoveSelector/>
-    </unionMoveSelector>  -->
-    <!-- changeMoveSelector is the generic form of RowChangeMoveFactory: -->
+    </unionMoveSelector>
+    <!--
     <moveListFactory>
       <moveListFactoryClass>org.optaplanner.examples.nqueens.solver.move.factory.SkyscraperMoveChangeFactory</moveListFactoryClass>
     </moveListFactory>
+    -->
     <acceptor>
       <!-- entityTabuSize>50</entityTabuSize-->
       <entityTabuRatio>0.025</entityTabuRatio>
