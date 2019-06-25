@@ -5,6 +5,9 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.core.impl.heuristic.move.AbstractMove;
 import org.optaplanner.core.impl.score.director.ScoreDirector;
+import org.optaplanner.core.api.score.buildin.simple.SimpleScore;
+import org.optaplanner.core.api.score.AbstractScore;
+// import org.optaplanner.core.api.domain.solution.PlanningScore;
 
 import org.optaplanner.examples.nqueens.app.Skyscraper;
 import org.optaplanner.examples.nqueens.domain.Puzzle;
@@ -18,6 +21,7 @@ import java.lang.Math.abs;
 public class SkyscraperSimpleScoreCalculator implements SimpleScoreCalculator<NQueens> {
 
     public SimpleScore calculateScore(Puzzle puzzle) {
+        // @PlanningScore
         int total_score = 0;
 
         Cell[][] grid = puzzle.get_grid();

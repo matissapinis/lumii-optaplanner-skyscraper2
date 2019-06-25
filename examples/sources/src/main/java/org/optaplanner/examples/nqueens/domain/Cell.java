@@ -37,9 +37,11 @@ public class Cell implements Serializable {
         this.c_idx = c_idx;
 
         this.row = new Row();
-        this.row.set_idx(r_idx);
+        // this.row.set_idx(r_idx); :: Replaced with identifier used by NQueens.
+        this.row.setIndex(r_idx);
         this.column = new Column();
-        this.column.set_idx(c_idx);
+        // this.column.set_idx(c_idx); :: Replaced with identifier used by NQueens.
+        this.column.setIndex(r_idx);
 
         this.entry = new Entry();
     }
