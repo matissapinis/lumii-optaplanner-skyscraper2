@@ -7,7 +7,7 @@ Sources:
 
 Author:         Matīss Apinis
 Date created:   2019/04/23
-Date edited:    2019/05/28
+Date edited:    2019/06/26
 *******************************************************************************************************************/
 
 package org.optaplanner.examples.nqueens.domain;
@@ -44,7 +44,7 @@ public class Cell implements Serializable {
         // this.column.set_idx(c_idx); :: Replaced with identifier used by NQueens.
         this.column.setIndex(r_idx);
 
-        this.entry = new Entry();
+        this.entry = new Entry(this); /// Does this work?
     }
 
 

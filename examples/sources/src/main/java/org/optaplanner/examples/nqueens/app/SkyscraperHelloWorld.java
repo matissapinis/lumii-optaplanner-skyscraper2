@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 **/
 
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.lang.String.*;
 
@@ -80,26 +82,72 @@ public class SkyscraperHelloWorld {
          3) Print ' ' + bottom clues ' '.
          **/
 
-        Cell[][] grid = puzzle.get_grid();
+        List<Cell> cell_list = puzzle.get_cell_list();
 
+        /** Previous approach with 2D grid of cells for O(1) operations:
+        Cell[][] grid = puzzle.get_grid();
+        **/
+
+        /// TODO: To make sure to choose the (i, j)-th cell from the cell list I'd have to use a loop to find it.
         System.out.printf(" ");
         for (int i = 0; i < Skyscraper.row_count; i++) {
+            for (int ii = 0; ii < cell_list.size(); ii++) {
+                if (cell_list.get(ii).get_column_idx() == i) {
+                    System.out.printf(String.valueOf(cell_list.get(i).get_column().get_T_clue()) + " ");
+                }
+            }
+
+            /** Previous approach with 2D grid of cells for O(1) operations:
             System.out.printf(String.valueOf(grid[0][i].get_column().get_T_clue()) + " ");
+            **/
         }
 
         System.out.printf("%n");
 
         for (int i = 0; i < Skyscraper.row_count; i++) {
-            System.out.printf(String.valueOf(grid[i][0].get_row().get_L_clue()) + " ");
-            for (int j = 0; j < Skyscraper.column_count; j++) {
-                System.out.printf(String.valueOf(grid[i][j].get_entry().get_entry_value()) + " ");
+            for (int ii = 0; ii < cell_list.size(); ii++) {
+                if (cell_list.get(ii).get_row_idx() == i) {
+                    System.out.printf(String.valueOf(cell_list.get(i).get_row().get_L_clue()) + " ");
+                }
             }
+
+            /** Previous approach with 2D grid of cells for O(1) operations:
+            System.out.printf(String.valueOf(grid[i][0].get_row().get_L_clue()) + " ");
+            **/
+
+            for (int j = 0; j < Skyscraper.column_count; j++) {
+                for (int ii = 0; ii < cell_list.size(); ii++) {
+                    for (int jj = 0; ii < cell_list.size(); jj++) {
+                        if (cell_list.get(ii).get_row_idx() == i && cell_list.get(jj).get_column_idx() == j) {
+                            System.out.printf(String.valueOf(cell_list.get(j).get_entry().get_entry_value()) + " "); /// TODO: Index correct?
+                        }
+                    }
+                }
+
+                /** Previous approach with 2D grid of cells for O(1) operations:
+                System.out.printf(String.valueOf(grid[i][j].get_entry().get_entry_value()) + " ");
+                **/
+            }
+
+            /// TODO: To make sure to choose the (i, j)-th cell from the cell list I'd have to use a loop to find it.
+            System.out.printf(String.valueOf(cell_list.get(i).get_column().get_T_clue()) + " "); /// TODO: Wrong, left here.
+
+            /** Previous approach with 2D grid of cells for O(1) operations:
             System.out.printf(String.valueOf(grid[i][0].get_row().get_R_clue()) + "%n");
+            **/
         }
 
         System.out.printf(" ");
         for (int i = 0; i < Skyscraper.row_count; i++) {
+            for (int ii = 0; ii < cell_list.size(); ii++) {
+                if (cell_list.get(ii).get_column_idx() == i) {
+                    System.out.printf(String.valueOf(cell_list.get(i).get_column().get_B_clue()) + " ");
+                }
+            }
+
+            /** Previous approach with 2D grid of cells for O(1) operations:
             System.out.printf(String.valueOf(grid[0][i].get_column().get_B_clue()) + " ");
+            **/
         }
     }
 }

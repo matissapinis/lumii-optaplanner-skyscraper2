@@ -7,7 +7,9 @@ import org.optaplanner.examples.nqueens.domain.Cell;
 import org.optaplanner.examples.nqueens.domain.Entry;
 import org.optaplanner.examples.nqueens.domain.Puzzle;
 
+import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 // import org.optaplanner.core.api.domain.solution.PlanningScore;
 
@@ -18,9 +20,28 @@ public class SkyscraperEasyScoreCalculator implements EasyScoreCalculator<Puzzle
         // @PlanningScore
         int total_score = 0;
 
+        List<Cell> cell_list = puzzle.get_cell_list();
+        List<Entry> entry_list = puzzle.get_entry_list();
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
         Cell[][] grid = puzzle.get_grid();
         Entry[][] entries = puzzle.get_entries();
+        **/
 
+        /** Put all the cells and entries into 2D grids for O(1) operations: **/
+        Cell[][] grid = new Cell[Skyscraper.row_count][Skyscraper.column_count];
+        Entry[][] entries = new Entry[Skyscraper.row_count][Skyscraper.column_count];
+
+        for (int c = 0; c < cell_list.size(); c++) {
+            for (int i = 0; i < Skyscraper.row_count; i++) {
+                for (int j = 0; j < Skyscraper.column_count; j++) {
+                    if (cell_list.get(c).get_row_idx() == i && cell_list.get(c).get_column_idx() == j) {
+                        grid[i][j] = cell_list.get(c);
+                        entries[i][j] = entry_list.get(c);
+                    }
+                }
+            }
+        }
 
 
         /** Decreasing score for each duplicate entry and for each entry out of bounds: **/

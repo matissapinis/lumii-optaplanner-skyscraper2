@@ -7,7 +7,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.examples.nqueens.app.Skyscraper;
 
 public class Entry implements Serializable {
-    private int id;
+    private int id; ///
     private int value;
     private static int count; ///
     private Cell cell;
@@ -23,11 +23,11 @@ public class Entry implements Serializable {
 
     /** Initialize entry: **/
     /// public Entry(int id, Cell cell) {
-    /// public Entry(Cell cell) {
-    public Entry() {
+    /// public Entry() {
+    public Entry(Cell cell) {
         /// this.id = id;
         this.value = -1;
-        /// this.cell = cell;
+        this.cell = cell;
     }
 
 

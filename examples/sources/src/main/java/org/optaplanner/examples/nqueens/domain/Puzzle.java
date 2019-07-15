@@ -39,19 +39,22 @@ import org.optaplanner.examples.nqueens.domain.Entry;
 // Planning solution:
 @PlanningSolution
 public class Puzzle extends AbstractPersistable {
+    /** Approach with lists of problem fact and planning entity objects: **/
+    // Problem fact:
+    private List<Row> row_list;
+    // Problem fact:
+    private List<Column> column_list;
+
     // Planning entity:
-    ///
-    private List<Column> column_list; // P. facts
-    private List<Row> row_list; // P. facts
-
-    private List<Cell> cell_list; // P. entity
-    private List<Entry> entry_list; // P. facts
+    private List<Cell> cell_list;
+    // Problem fact:
+    private List<Entry> entry_list;
 
 
-    /** Approach with 2D grid of cells for O(1) operations: **/
+    /** Previous approach with 2D grid of cells for O(1) operations:
     private Cell[][] grid;
     private Entry[][] entries;
-
+    **/
 
     /** Previous approach with O(n) cell operations:
     private List<Row> rows;
@@ -59,19 +62,26 @@ public class Puzzle extends AbstractPersistable {
     private List<Cell> cells;
     **/
 
+
+    // Planning score:
     private SimpleScore score;
 
 
 
     /** Initialize puzzle board: **/
     public Puzzle() {
-        /** TODO: Create all the List variables without null default values. **/
-        /// TBC:
+        /** Approach with lists of problem fact and planning entity objects: **/
+        this.row_list = new ArrayList<Row>(Skyscraper.row_count);
+        this.column_list = new ArrayList<Column>(Skyscraper.column_count);
 
-        /** Approach with 2D grid of cells for O(1) operations: **/
-        /** TODO: How to create a 2D array of objects in Java? **/
+        this.cell_list = new ArrayList<Cell>(Skyscraper.cell_count);
+        this.entry_list = new ArrayList<Entry>(Skyscraper.entry_count);
+
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
         this.grid = new Cell[Skyscraper.row_count][Skyscraper.column_count];
         this.entries = new Entry[Skyscraper.row_count][Skyscraper.column_count];
+        **/
 
 
         /** Previous approach with O(n) cell operations:
@@ -85,13 +95,27 @@ public class Puzzle extends AbstractPersistable {
 
     /** Create puzzle board as grid of cells: **/
     public void create_puzzle() {
-        /** Approach with 2D grid of cells for O(1) operations: **/
+        /** Approach with lists of problem fact and planning entity objects: **/
+        // Create 16 cells in respective rows and columns indexed from (0,0) to (3,3) with entries valued -1:
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+            for (int j = 0; j < Skyscraper.column_count; j++) {
+                Cell new_cell = new Cell(i, j);
+                this.row_list.add(new_cell.get_row());
+                this.column_list.add(new_cell.get_column());
+                this.cell_list.add(new_cell);
+                this.entry_list.add(new_cell.get_entry());
+            }
+        }
+
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
         // Initialize cells in grid with entry value -1:
         for (int i = 0; i < this.grid.length; i++) {
             for (int j = 0; j < this.grid[i].length; j++) {
                 this.grid[i][j] = new Cell(i, j);
             }
         }
+        **/
 
 
         /** Previous approach with O(n) cell operations:
@@ -121,26 +145,83 @@ public class Puzzle extends AbstractPersistable {
 
 
 
+    /** Set and get row list: **/
+    public void set_row_list(List<Row> row_list) {
+        this.row_list = row_list;
+    }
+
+    @ProblemFactCollectionProperty
+    public List<Row> get_row_list() {
+        return row_list;
+    }
+
+
+
+    /** Set and get column list: **/
+    public void set_column_list(List<Column> column_list) {
+        this.column_list = column_list;
+    }
+
+    @ProblemFactCollectionProperty
+    public List<Column> get_column_list() {
+        return column_list;
+    }
+
+
+
+    /** Set and get cell list: **/
+    public void set_cell_list(List<Cell> cell_list) {
+        this.cell_list = cell_list;
+    }
+
+    @PlanningEntityCollectionProperty
+    public List<Cell> get_cell_list() {
+        return cell_list;
+    }
+
+
+
+    /** Set and get entry list: **/
+    public void set_entry_list(List<Entry> entry_list) {
+        this.entry_list = entry_list;
+    }
+
+    @ValueRangeProvider(id = "entry_value_range") // {"entry_value_range"})
+    @ProblemFactCollectionProperty
+    public List<Entry> get_entry_list() {
+        return entry_list;
+    }
+
+
+
     /** Set and get grid of cells: **/
+    /** Previous approach with 2D grid of cells for O(1) operations:
     public void set_grid(Cell[][] grid) {
         this.grid = grid;
     }
+    **/
 
     /**
     "Planner needs to extract the entity instances from the solution instance.
     It gets those collection(s) by calling every getter (or field) that is annotated with @PlanningEntityCollectionProperty:
     **/
+    /**
     @PlanningEntityCollectionProperty
     public Cell[][] get_grid() {
         return this.grid;
     }
+    **/
 
 
 
     /** Set and get puzzle board cell entry: **/
-    public void set_cell_entry(int r_idx, int c_idx, Entry entry) {
-        /** Approach with 2D grid of cells for O(1) operations: **/
+    public void set_cell_entry(Cell cell, Entry entry) {
+        cell.set_entry(entry);
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
+        public void set_cell_entry(int r_idx, int c_idx, Entry entry) {
         this.grid[r_idx][c_idx].set_entry(entry);
+        **/
 
 
         /** Previous approach with O(n) cell operations:
@@ -159,9 +240,13 @@ public class Puzzle extends AbstractPersistable {
         **/
     }
 
-    public Entry get_cell_entry(int r_idx, int c_idx) {
-        /** Approach with 2D grid of cells for O(1) operations: **/
+    public Entry get_cell_entry(Cell cell) {
+        return cell.get_entry();
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
+        public Entry get_cell_entry(int r_idx, int c_idx) {
         return this.grid[r_idx][c_idx].get_entry();
+        **/
 
         /** Previous approach with O(n) cell operations:
         for (int i = 0; i < Skyscraper.row_count; i++) {
@@ -182,28 +267,42 @@ public class Puzzle extends AbstractPersistable {
 
 
     /** Set and get puzzle board cell entry value: **/
-    public void set_cell_entry_value(int r_idx, int c_idx, int value) {
+    public void set_cell_entry_value(Cell cell, int value) {
+        cell.get_entry().set_entry_value(value);
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
+        public void set_cell_entry_value(int r_idx, int c_idx, int value) {
         this.grid[r_idx][c_idx].get_entry().set_entry_value(value);
+        **/
     }
 
-    public int get_cell_entry_value(int r_idx, int c_idx) {
+    public int get_cell_entry_value(Cell cell) {
+        return cell.get_entry().get_entry_value();
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
+        public int get_cell_entry_value(int r_idx, int c_idx) {
         return this.grid[r_idx][c_idx].get_entry().get_entry_value();
+        **/
     }
 
 
 
     /** Set and get grid of entries: **/
-    public void set_entires(Entry[][] entries) {
+    /** Previous approach with 2D grid of cells for O(1) operations:
+    public void set_entries(Entry[][] entries) {
         this.entries = entries;
     }
+    **/
 
     /**
     The valueRangeProviderRefs property defines what are the possible planning values for this planning variable.
     It references one or more @ValueRangeProvider id's.
     **/
+    /** Previous approach with 2D grid of cells for O(1) operations:
     public Entry[][] get_entries() {
         return this.entries;
     }
+    **/
 
 
 
@@ -221,50 +320,22 @@ public class Puzzle extends AbstractPersistable {
 
     /** Get a cell from the grid by its row and column indices: **/
     public Cell get_cell_by_indices(int r_idx, int c_idx) {
+        for (int i = 0; i < Skyscraper.row_count; i++) {
+             for (int j = 0; j < Skyscraper.column_count; i++) {
+                 Cell target_cell = this.cell_list.get(i);
+
+                 boolean row_match = (target_cell.get_row_idx() == r_idx);
+                 boolean column_match = (target_cell.get_column_idx() == c_idx);
+
+                 if (row_match && column_match) {
+                     return target_cell;
+                 }
+             }
+        }
+        return null;
+
+        /** Previous approach with 2D grid of cells for O(1) operations:
         return this.grid[r_idx][c_idx];
-    }
-
-
-
-    @ProblemFactCollectionProperty
-    public List<Column> getColumn_list() {
-        return column_list;
-    }
-
-    public void setColumn_list(List<Column> column_list) {
-        this.column_list = column_list;
-    }
-
-
-
-    @ProblemFactCollectionProperty
-    public List<Row> getRow_list() {
-        return row_list;
-    }
-
-    public void setRow_list(List<Row> row_list) {
-        this.row_list = row_list;
-    }
-
-
-
-    @PlanningEntityCollectionProperty
-    public List<Cell> getCell_list() {
-        return cell_list;
-    }
-
-    public void setCell_list(List<Cell> cell_list) {
-        this.cell_list = cell_list;
-    }
-
-
-    @ValueRangeProvider(id = "entry_value_range") // {"entry_value_range"})
-    @ProblemFactCollectionProperty
-    public List<Entry> getEntry_list() {
-        return entry_list;
-    }
-
-    public void setEntry_list(List<Entry> entry_list) {
-        this.entry_list = entry_list;
+        **/
     }
 }
